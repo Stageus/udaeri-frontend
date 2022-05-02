@@ -1,70 +1,31 @@
-# :space_invader: React Native Template TypeScript
+# 우대리
 
-<p>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/actions/workflows/npm-publish.yml">
-    <img alt="Build Status" src="https://github.com/react-native-community/react-native-template-typescript/actions/workflows/npm-publish.yml/badge.svg" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript#readme">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/graphs/commit-activity">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/react-native-community/react-native-template-typescript/blob/master/LICENSE">
-    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
-  </a>
-</p>
+## 사용 기술
 
-> Clean and minimalist React Native template for a quick start with TypeScript.
+- React Native
+- TypeScript
+- Redux toolkit
+- React Native Navigation
+- Styled-Components
 
-## :star: Features
+## Commit Convention
 
-- Elegant usage directly within the [React Native CLI](https://github.com/react-native-community/cli)
-- Consistent with the default React Native template
-- Minimal additional dependencies
+> feat : 새로운 기능  
+> fix : 버그  
+> refactor: 코드 리팩토링  
+> style : 코드 의미에 영향을 주지 않는 변경사항 (형식 지정, 세미콜론 누락 등)  
+> docs : 문서의 추가, 수정, 삭제  
+> test : 테스트 추가, 수정, 삭제 (비즈니스 로직에 변경 없음)  
+> chore : 기타 변경사항 (빌드 부분 혹은 패키지 매니저 수정사항)  
+> setting : 환경 설정
 
-## :arrow_forward: Usage
+## github flow
 
-```sh
-npx react-native init MyApp --template react-native-template-typescript
-```
-
-### Usage with older versions of React Native
-
-#### e.g. `react-native@0.67.x`
-
-```sh
-npx react-native init MyApp --template react-native-template-typescript@6.9.*
-```
-
-See the below table to find out which version of the template to use.
-
-#### React Native <=> Template Version
-
-| React Native | Template |
-| ------------ | -------- |
-| 0.68         | 6.10.\*  |
-| 0.67         | 6.9.\*   |
-| 0.66         | 6.8.\*   |
-| 0.65         | 6.7.\*   |
-| 0.64         | 6.6.\*   |
-| 0.63         | 6.5.\*   |
-| 0.62         | 6.4.\*   |
-| 0.61         | 6.3.\*   |
-| 0.60         | 6.2.\*   |
-
-## :warning: React Native CLI
-
-This template only works with the new CLI. Make sure you have uninstalled the legacy `react-native-cli` first (`npm uninstall -g react-native-cli`) for the below command to work. If you wish to not use `npx`, you can also install the new CLI globally (`npm i -g @react-native-community/cli` or `yarn global add @react-native-community/cli`).
-
-If you tried the above and still get the react-native-template-react- native-template-typescript: Not found error, please try adding the `--ignore-existing` flag to [force npx to ignore](https://github.com/npm/npx#description) any locally installed versions of the CLI and use the latest.
-
-Further information can be found here: https://github.com/react-native-community/cli#about
-
-## :computer: Contributing
-
-Contributions are very welcome. Please check out the [contributing document](CONTRIBUTING.md).
-
-## :bookmark: License
-
-This project is [MIT](LICENSE) licensed.
+- master branch : 배포 가능한 최신 상태
+- develop branch
+  - feature 브랜치의 기준이 되는 브랜치.
+  - 테스트 후 문제 없을 시 master 브랜치로 merge
+- feature branch
+  - 새로운 기능 개발을 위한 브랜치.
+  - develop브랜치를 기준으로 생성.
+  - 브랜치 이름은 "feature/기능이름"으로 생성
