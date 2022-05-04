@@ -1,6 +1,6 @@
-import {DefaultTheme} from 'styled-components';
+import { DefaultTheme } from 'styled-components';
 
-const myTheme: DefaultTheme = {
+const theme: DefaultTheme = {
   borderRadius: '5px',
 
   colors: {
@@ -16,4 +16,4 @@ const myTheme: DefaultTheme = {
   },
 };
 
-export default myTheme;
+export default theme;
