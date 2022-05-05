@@ -6,7 +6,7 @@ export const LongBtnContainer = styled.TouchableOpacity`
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-  width: 200px;
+  width: ${theme.width * 0.85}
   height: 40px;
 `;
 

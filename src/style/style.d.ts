@@ -1,8 +1,8 @@
 // import original module declarations
-import 'styled-components';
+import "styled-components";
 
 // 디폴트 테마 타입 적어두는 파일
-declare module 'styled-components' {
+declare module "styled-components" {
   export interface DefaultTheme {
     borderRadius: string;
 
@@ -17,5 +17,7 @@ declare module 'styled-components' {
       lineColor2: string;
       lineColor3: string;
     };
+
+    width: number;
   }
 }
