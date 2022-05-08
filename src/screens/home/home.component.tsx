@@ -1,23 +1,23 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import styled from "styled-components/native";
 
 // import {useAppDispatch, useAppSelector} from '../../../store/hooks';
 // import {ageCounter, nameChange} from '../../../store/slice/userSlice';
 import { HomeText } from "./home.style";
-import { HomeIcon } from "../../assets/icon/icons";
-import { SvgXml } from "react-native-svg";
 import { LongBtn } from "../../components/longBtn/longBtn.component";
+import { HomeJjimEle } from "../../components/home-jjimEle/home-jjimEle.component";
+import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
 
 const Home = (): JSX.Element => {
   return (
-    <SafeAreaView>
-      <HomeText>홈</HomeText>
-      <Box>
-        <SvgXml xml={HomeIcon} width="100%" height="100%" fill="#000000" />
-      </Box>
-      <LongBtn btnTitle="지도로 보기" pageTitle="Map" />
-    </SafeAreaView>
+    <SafeAreaViewComp>
+      <View>
+        <HomeText>홈!!</HomeText>
+        <LongBtn btnTitle="지도로 보기" pageTitle="Map" />
+        <HomeJjimEle></HomeJjimEle>
+      </View>
+    </SafeAreaViewComp>
   );
 };
 
