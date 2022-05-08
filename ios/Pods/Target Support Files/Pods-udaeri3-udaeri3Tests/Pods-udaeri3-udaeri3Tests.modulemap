@@ -1,0 +1,6 @@
+module Pods_udaeri3_udaeri3Tests {
+  umbrella header "Pods-udaeri3-udaeri3Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
