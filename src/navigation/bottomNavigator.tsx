@@ -41,13 +41,13 @@ const screenOptions = ({
       const focusedColor = focused ? mainColor : "black";
       switch (name) {
         case "Home":
-          return <HomeIcon name="home" size={32} color={focusedColor} />;
+          return <HomeIcon name="home" size={24} color={focusedColor} />;
         case "Search":
-          return <SearchIcon name="search1" size={32} color={focusedColor} />;
+          return <SearchIcon name="search1" size={24} color={focusedColor} />;
         case "Jjim":
-          return <HeartIcon name="hearto" size={32} color={focusedColor} />;
+          return <HeartIcon name="hearto" size={24} color={focusedColor} />;
         case "MyPage":
-          return <UserIcon name="user-o" size={32} color={focusedColor} />;
+          return <UserIcon name="user-o" size={24} color={focusedColor} />;
       }
     },
   };
