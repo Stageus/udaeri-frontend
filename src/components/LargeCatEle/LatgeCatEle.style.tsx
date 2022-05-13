@@ -1,7 +1,7 @@
 import styled from "styled-components/native";
 import theme from "../../style/theme";
 
-export const Container = styled.Pressable`
+export const Container = styled.TouchableOpacity`
     align-items: center;
     flex-direction: center;
     justify-content: space-between;

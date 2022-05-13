@@ -9,14 +9,15 @@ export type ProfileScreenNavigationProp = {
 
 interface Props {
     title : "지도" | null;
+    size : number
 }
 
-const MagniBtn = ({title} : Props) => {
+const MagniBtn = ({title, size = 24} : Props) => {
     const navigation = useNavigation<ProfileScreenNavigationProp>();
     return (
         <Icon
           name="magnifying-glass"
-          size={24}
+          size={size}
           color="gray"
           onPress={() =>
             title === "지도"

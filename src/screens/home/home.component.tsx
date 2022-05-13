@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { SafeAreaView, View } from "react-native";
 import styled from "styled-components/native";
 
@@ -6,16 +6,15 @@ import styled from "styled-components/native";
 // import {ageCounter, nameChange} from '../../../store/slice/userSlice';
 import { 
   Container,
-  LogoText, 
-  UnivText,
-  MiddleBlock,
-  CatWrap
+  Header,
+  MiddleBlock
 } from "./home.style";
 import { LongBtn } from "../../components/longBtn/longBtn.component";
 import { HomeJjimEle } from "../../components/home-jjimEle/home-jjimEle.component";
 import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
 import { ScrollView } from "react-native-gesture-handler";
 import LargeCatEle from "../../components/LargeCatEle/LargeCatEle.component";
+import MagniBtn from "../../components/HeaderBar/MagniBtn/MagniBtn.component";
 
 const categoryList = [
   {
@@ -47,28 +46,28 @@ const categoryList = [
 const Home = (): JSX.Element => {
   return (
     <SafeAreaViewComp>
-      <Container>
         <ScrollView showsHorizontalScrollIndicator={false}>
-        <LogoText>우리대학거리</LogoText>
-        <UnivText>인하대학교</UnivText>
-          <MiddleBlock>
-            <CatWrap>
-              {categoryList.map((item, index) => {
-                return(
-                  <LargeCatEle
-                      key={index}
-                      name={item.name}
-                      page="MiddleCat"
-                  ></LargeCatEle>
-              )})}
-            </CatWrap>
-          </MiddleBlock>
-
-        
-        <LongBtn btnTitle="지도로 보기" pageTitle="Map" />
-        <HomeJjimEle></HomeJjimEle>
+          <Container>
+            <Header.Container>
+              <Header.LogoText>우리대학거리</Header.LogoText>
+              <MagniBtn title={null} size={36}></MagniBtn>
+            </Header.Container>
+            <MiddleBlock.Container>
+              <MiddleBlock.CatWrap>
+                {categoryList.map((item, index) => {
+                  return(
+                    <LargeCatEle
+                        key={index}
+                        name={item.name}
+                    ></LargeCatEle>
+                )})}
+              </MiddleBlock.CatWrap>
+              <LongBtn btnTitle="지도로 보기" pageTitle="Map" />
+            </MiddleBlock.Container>
+            
+            <HomeJjimEle></HomeJjimEle>
+          </Container>
         </ScrollView>
-      </Container>
     </SafeAreaViewComp>
   );
 };

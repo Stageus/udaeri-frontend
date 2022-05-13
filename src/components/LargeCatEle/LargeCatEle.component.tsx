@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { 
     Container,
     Thumbnail,
@@ -8,15 +8,22 @@ import Icon1 from "react-native-vector-icons/MaterialCommunityIcons"
 import Icon2 from "react-native-vector-icons/Ionicons"
 import Icon3 from "react-native-vector-icons/FontAwesome5"
 import Icon4 from "react-native-vector-icons/Entypo"
+import { useNavigation } from "@react-navigation/native";
+import MiddleCat from "../../screens/MiddleCat/MiddleCat.component";
 
 interface Props {
     key : number,
     name : string,
 }
 
+
 const LargeCatEle = ({name} : Props) : JSX.Element => {
+    const navigation = useNavigation();
+    const onMove = () => {
+        navigation.navigate("MiddleCat", { catName: name });
+    }
     return (
-        <Container>
+        <Container onPress={onMove}>
             <Thumbnail>
                 {
                     name === "먹거리" ? (

@@ -9,23 +9,33 @@ export const Container = styled.View`
   padding : 10px 10px;
 `;
 
-export const LogoText = styled.Text`
-  font-weight: 800;
-  font-size: 24px;
-`;
+export const Header = {
+  Container : styled.View`
+    padding : 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  `,
+  LogoText : styled.Text`
+    font-weight: 800;
+    font-size: 24px;
+  `,
+  UnivText : styled.Text`
+    font-weight: 300;
+    font-size: 16px;
+  ` 
+}
 
-export const UnivText = styled.Text`
-  font-weight: 300;
-  font-size: 16px;
-`;
-
-export const MiddleBlock = styled.View`
-  padding-top: 10px;
-  margin-bottom: 5px;
-`;
-
-export const CatWrap = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-`;
+export const MiddleBlock = {
+  Container : styled.View`
+    padding-top: 10px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+  `,
+  CatWrap : styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  `
+};
