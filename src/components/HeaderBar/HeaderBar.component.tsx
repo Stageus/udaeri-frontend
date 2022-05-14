@@ -13,7 +13,6 @@ interface Props {
 }
 
 const HeaderBar = ({title, left, center, right} : Props): JSX.Element => {
-  console.log(title)
   return (
     <HeaderBarContainer center={center}>
       {left ? (

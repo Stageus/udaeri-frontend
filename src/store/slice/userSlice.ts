@@ -1,28 +1,29 @@
 import {createSlice} from '@reduxjs/toolkit';
 
 export interface UserState {
-  name: string;
-  age: number;
+  tokenCheck: boolean;
+  userNickName: string | null;
 }
 
 const initialState: UserState = {
-  name: 'yujin',
-  age: 0,
+  tokenCheck : false,
+  userNickName : null,
 };
 
 export const userSlice = createSlice({
   name: 'user',
   initialState,
   reducers: {
-    ageCounter: state => {
-      state.age += 1;
+    checkToken: (state, {payload}) => {
+      state.tokenCheck = payload.token;
     },
-    nameChange: (state, action) => {
-      state.name = action.payload;
+    restoreUserNickname: (state, {payload}) => {
+      state.userNickName = payload.nickname;
     },
   },
 });
 
-export const {ageCounter, nameChange} = userSlice.actions;
+export const {checkToken, restoreUserNickname} = userSlice.actions;
+export const isToken = (state) => state.user.tokenCheck; // 9.
 
 export default userSlice.reducer;
