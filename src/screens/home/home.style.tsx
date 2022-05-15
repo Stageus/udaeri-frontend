@@ -1,27 +1,41 @@
 import styled from "styled-components/native";
-import theme from "../../style/theme";
+import { Dimensions } from "react-native";
 
-export const HomeText = styled.Text`
-  font-size: 30px;
+const { width, height } = Dimensions.get("window");
+
+export const Container = styled.View`
+  flex: 1;
+  justify-content: center;
+  padding : 10px 10px;
 `;
 
-export const HomeContainer = styled.View`
-  padding: 0 20px;
-`;
-
-export const TopContainer = styled.View`
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  // margin-top: 10px;
-`;
-
-interface TopTitleProp {
-  readonly main?: boolean;
+export const Header = {
+  Container : styled.View`
+    padding : 10px 20px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  `,
+  LogoText : styled.Text`
+    font-weight: 800;
+    font-size: 24px;
+  `,
+  UnivText : styled.Text`
+    font-weight: 300;
+    font-size: 16px;
+  ` 
 }
 
-export const TopTitle = styled.Text<TopTitleProp>`
-  font-size: 20px;
-  font-weight: bold;
-  color: ${(props) => (props.main ? theme.colors.main : "#000")};
-`;
+export const MiddleBlock = {
+  Container : styled.View`
+    padding-top: 10px;
+    margin-bottom: 5px;
+    flex-direction: column;
+    align-items: center;
+  `,
+  CatWrap : styled.View`
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  `
+};
