@@ -22,7 +22,7 @@ const RootNavigator = (): JSX.Element => {
   return (
     <NavigationContainer>
       <RootStack.Navigator screenOptions={{ headerShown: false }}>
-        <RootStack.Screen name="LoginPage" component={LoginPage} />
+        {/* <RootStack.Screen name="LoginPage" component={LoginPage} /> */}
         <RootStack.Screen name="BottomNavigator" component={BottomNavigator} />
         <RootStack.Screen name="Map" component={Map} />
         <RootStack.Screen name="MiddleCat" component={MiddleCat} />

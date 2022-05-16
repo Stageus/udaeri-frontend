@@ -21,7 +21,7 @@ const HeaderBar = ({title, left, center, right} : Props): JSX.Element => {
       ) :
       (<View />)}
       <StoreName>{title}</StoreName>
-      {right === cd"magni" ? (
+      {right === "magni" ? (
         <MagniBtn title={null} />
         ) : right === "heart" ? (
         <HeartBtn jjimState={true} title="" />
