@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 
 // import {useAppDispatch, useAppSelector} from '../../../store/hooks';
 // import {ageCounter, nameChange} from '../../../store/slice/userSlice';
-import { Container, Header, MiddleBlock } from "./home.style";
+import { Container, Header, MiddleBlock } from "./Home.style";
 import { LongBtn } from "../../components/longBtn/longBtn.component";
 import { HomeJjimEle } from "../../components/home-jjimEle/home-jjimEle.component";
 import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
