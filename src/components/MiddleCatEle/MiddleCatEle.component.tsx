@@ -2,6 +2,9 @@ import React from "react";
 import { Container, CatTitle, Thumbnail } from "../MiddleCatEle/MiddleCatEle.style";
 import { LeftBlock } from "./MiddleCatEle.style";
 import Icon from "react-native-vector-icons/MaterialIcons";
+import { SvgXml } from "react-native-svg";
+import { GoIcon } from '../../assets/icon/icons';
+import theme from '../../style/theme';
 
 interface Props {
     key : number,
@@ -19,7 +22,12 @@ const MidCatEle = ({ name } : Props) : JSX.Element => {
                     {name}
                 </CatTitle>
             </LeftBlock>
-            <Icon name="arrow-forward-ios" size={12} color="gray" />
+            <SvgXml 
+                xml={GoIcon} 
+                width="16px" 
+                height="16px" 
+                fill= {theme.colors.fontColor2}
+            />
         </Container>
     )
 }

@@ -25,4 +25,5 @@ export const HeaderBarContainer = styled.View<Props>`
 
 export const StoreName = styled.Text`
     font-size: 24px;
+    font-family: ${theme.font.Medium};
 `;
