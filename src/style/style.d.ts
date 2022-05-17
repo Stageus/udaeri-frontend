@@ -19,5 +19,13 @@ declare module "styled-components" {
     };
 
     width: number;
+
+    font : {
+      Bold : string;
+      Medium : string;
+      Regular : string;
+      Light : string;
+      Thin : string;
+    }
   }
 }
