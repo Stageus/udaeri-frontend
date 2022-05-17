@@ -5,10 +5,15 @@ import theme from "../style/theme";
 import Home from "../screens/Home/Home.component";
 import Search from "../screens/Search/search.component";
 import Jjim from "../screens/Jjim/jjim.component";
-import MyPage from "../screens/MyPage/my-page.component";
+import MyPage from "../screens/MyPage/My-page.component";
 
 import { SvgXml } from "react-native-svg";
-import { HomeIcon, SearchIcon, HeartIcon, UserIcon } from "../assets/icon/icons";
+import {
+  HomeIcon,
+  SearchIcon,
+  HeartIcon,
+  UserIcon,
+} from "../assets/icon/icons";
 
 import type { RouteProp, ParamListBase } from "@react-navigation/native";
 
@@ -31,13 +36,41 @@ const screenOptions = ({
       const focusedColor = focused ? mainColor : "black";
       switch (name) {
         case "Home":
-          return <SvgXml xml={HomeIcon} width="24px" height="24px" fill={focusedColor} />;
+          return (
+            <SvgXml
+              xml={HomeIcon}
+              width="24px"
+              height="24px"
+              fill={focusedColor}
+            />
+          );
         case "Search":
-          return <SvgXml xml={SearchIcon} width="24px" height="24px" fill={focusedColor} />;
+          return (
+            <SvgXml
+              xml={SearchIcon}
+              width="24px"
+              height="24px"
+              fill={focusedColor}
+            />
+          );
         case "Jjim":
-          return <SvgXml xml={HeartIcon} width="24px" height="24px" fill={focusedColor} />;
+          return (
+            <SvgXml
+              xml={HeartIcon}
+              width="24px"
+              height="24px"
+              fill={focusedColor}
+            />
+          );
         case "MyPage":
-          return <SvgXml xml={UserIcon} width="24px" height="24px" fill={focusedColor} />;
+          return (
+            <SvgXml
+              xml={UserIcon}
+              width="24px"
+              height="24px"
+              fill={focusedColor}
+            />
+          );
       }
     },
   };
