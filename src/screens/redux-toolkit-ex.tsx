@@ -1,18 +1,18 @@
-import React from 'react';
+import React from "react";
 import {
   SafeAreaView,
   StatusBar,
   Text,
   View,
   TouchableOpacity,
-} from 'react-native';
-import styled from 'styled-components/native';
+} from "react-native";
+import styled from "styled-components/native";
 
-import {useAppDispatch, useAppSelector} from '../store/hooks';
-import {ageCounter, nameChange} from '../store/slice/userSlice';
+import { useAppDispatch, useAppSelector } from "../../store/hooks";
+import { ageCounter, nameChange } from "../../store/slice/userSlice";
 
 const ReduxToolkitEx = (): JSX.Element => {
-  const userInfo = useAppSelector(state => state.userReducer);
+  const userInfo = useAppSelector((state) => state.userReducer);
   const dispatch = useAppDispatch();
 
   const ageIncrease = () => {
@@ -20,7 +20,7 @@ const ReduxToolkitEx = (): JSX.Element => {
   };
 
   const nameHandler = () => {
-    dispatch(nameChange('하하하'));
+    dispatch(nameChange("하하하"));
   };
 
   return (
