@@ -11,6 +11,10 @@ import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaView
 import { ScrollView } from "react-native-gesture-handler";
 import LargeCatEle from "../../components/LargeCatEle/LargeCatEle.component";
 import MagniBtn from "../../components/HeaderBar/MagniBtn/MagniBtn.component";
+import { checkToken } from "../../../store/slice/userSlice";
+
+import { useAppSelector, useAppDispatch } from "../../../store/hooks";
+
 
 const categoryList = [
   {

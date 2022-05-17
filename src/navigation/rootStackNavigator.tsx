@@ -8,6 +8,8 @@ import BottomNavigator from "./bottomNavigator";
 import Map from "../screens/Map/map.component";
 import MiddleCat from "../screens/MiddleCat/MiddleCat.component";
 import LoginPage from "../screens/LoginPage/LoginPage.component";
+import { useAppSelector, useAppDispatch } from "../../store/hooks";
+import { checkToken } from "../../store/slice/userSlice";
 
 export type RootStackParamList = {
   LoginPage : undefined;
@@ -19,6 +21,10 @@ export type RootStackParamList = {
 const RootStack = createStackNavigator<RootStackParamList>();
 
 const RootNavigator = (): JSX.Element => {
+  
+  const dispatch = useAppDispatch();
+  dispatch(checkToken(true))
+  
   return (
     <NavigationContainer>
       <RootStack.Navigator screenOptions={{ headerShown: false }}>
