@@ -6,12 +6,12 @@ export const LongBtnContainer = styled.TouchableOpacity`
   border-radius: 5px;
   align-items: center;
   justify-content: center;
-  width: ${theme.width * 0.85}
+  width: ${theme.width * 0.85};
   height: 40px;
 `;
 
 export const LongBtnTitle = styled.Text`
   font-size: 20px;
   color: #fff;
-  font-weight: bold;
+  font-family: ${theme.font.Medium};
 `;

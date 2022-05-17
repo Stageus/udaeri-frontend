@@ -18,12 +18,14 @@ export const Header = {
     align-items: center;
   `,
   LogoText : styled.Text`
-    font-size: 24px;
+    font-size: 20px;
     font-family: ${theme.font.Bold};
+    color: ${theme.colors.main};
   `,
   UnivText : styled.Text`
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: ${theme.font.Bold};
+    color: ${theme.colors.fontColor1};
   ` 
 }
 
