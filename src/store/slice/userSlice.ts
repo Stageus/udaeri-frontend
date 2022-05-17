@@ -1,4 +1,4 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
+import {createSlice} from '@reduxjs/toolkit';
 
 export interface UserState {
   name: string;
@@ -15,7 +15,7 @@ export const userSlice = createSlice({
   initialState,
   reducers: {
     ageCounter: state => {
-      state.age = state.age + 1;
+      state.age += 1;
     },
     nameChange: (state, action) => {
       state.name = action.payload;
