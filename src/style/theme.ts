@@ -17,6 +17,14 @@ const theme: DefaultTheme = {
   },
 
   width: Dimensions.get("window").width,
+
+  font : {
+    Bold : 'SpoqaHanSansNeo-Bold',
+    Medium : 'SpoqaHanSansNeo-Medium',
+    Regular : 'SpoqaHanSansNeo-Regular',
+    Light : 'SpoqaHanSansNeo-Light',
+    Thin : 'SpoqaHanSansNeo-Thin',
+  }
 };
 
 export default theme;

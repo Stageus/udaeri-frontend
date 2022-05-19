@@ -3,7 +3,6 @@ import theme from "../../style/theme";
 
 export const Container = styled.TouchableOpacity`
     align-items: center;
-    flex-direction: center;
     justify-content: space-between;
     margin: 12px 20px;
 `;
@@ -21,4 +20,5 @@ export const CatTitle = styled.Text`
     margin-top: 5px;
     font-size: 16px;
     color: black;
+    font-family: ${theme.font.Regular};
 `;

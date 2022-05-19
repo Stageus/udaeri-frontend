@@ -2,7 +2,11 @@ import React from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
 const Tab = createMaterialTopTabNavigator();
 
-const StoreListNavi = (props) => {
+interface Props {
+  title : string;
+}
+
+const StoreListNavi = ({title} : Props) => {
 
     const MidCatList = {
 

@@ -1,5 +1,6 @@
 import styled from "styled-components/native";
 import { Dimensions } from "react-native";
+import theme from '../../style/theme'
 
 const { width, height } = Dimensions.get("window");
 
@@ -17,12 +18,14 @@ export const Header = {
     align-items: center;
   `,
   LogoText : styled.Text`
-    font-weight: 800;
-    font-size: 24px;
+    font-size: 20px;
+    font-family: ${theme.font.Bold};
+    color: ${theme.colors.main};
   `,
   UnivText : styled.Text`
-    font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
+    font-family: ${theme.font.Bold};
+    color: ${theme.colors.fontColor1};
   ` 
 }
 

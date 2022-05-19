@@ -1,6 +1,8 @@
 import React from 'react';
-import Icon from "react-native-vector-icons/Entypo";
+import { SvgXml } from "react-native-svg";
+import { MagniIcon } from '../../../assets/icon/icons';
 import { useNavigation } from "@react-navigation/native";
+import theme from '../../../style/theme';
 
 export type ProfileScreenNavigationProp = {
     pop : () => void;
@@ -15,15 +17,16 @@ interface Props {
 const MagniBtn = ({title, size = 24} : Props) => {
     const navigation = useNavigation<ProfileScreenNavigationProp>();
     return (
-        <Icon
-          name="magnifying-glass"
-          size={size}
-          color="gray"
-          onPress={() =>
-            title === "지도"
-              ? navigation.navigate("MapSearch")
-              : navigation.navigate("RecentSearch")
-          }
+        <SvgXml 
+            xml={MagniIcon} 
+            width="24px" 
+            height="24px" 
+            fill= {theme.colors.fontColor2} 
+            onPress={() =>
+                title === "지도"
+                    ? navigation.navigate("MapSearch")
+                    : navigation.navigate("RecentSearch")
+            }
         />
     )
 }
