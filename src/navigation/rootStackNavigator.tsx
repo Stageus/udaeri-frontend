@@ -4,6 +4,7 @@ import {
 } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
 import React, { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import BottomNavigator from "./bottomNavigator";
 import Map from "../screens/Map/map.component";
 import MiddleCat from "../screens/MiddleCat/MiddleCat.component";

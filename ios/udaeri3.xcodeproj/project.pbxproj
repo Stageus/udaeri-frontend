@@ -10,15 +10,8 @@
 		00E356F31AD99517003FC87E /* udaeri3Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* udaeri3Tests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-udaeri3.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-udaeri3.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
-		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		3C1C93877DAC4E008A6FB5A6 /* SpoqaHanSansNeo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EDA359F016B541A0B3F51EBB /* SpoqaHanSansNeo-Light.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-udaeri3-udaeri3Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-udaeri3-udaeri3Tests.a */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		89A9F793732242449B88BF9E /* SpoqaHanSansNeo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C891EB9CEBCF445A884A6901 /* SpoqaHanSansNeo-Bold.ttf */; };
-		9100FF5E0B2F4DD5B20D905E /* SpoqaHanSansNeo-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39C17D452EA74407955E0A5B /* SpoqaHanSansNeo-Thin.ttf */; };
-		C1E5003BFE1744E5B2F0D9D7 /* SpoqaHanSansNeo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FFE2997030542EE927D6B4E /* SpoqaHanSansNeo-Medium.ttf */; };
-		F7BE81CA2B4B4F6E986061A8 /* SpoqaHanSansNeo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8692979D983B490CA064A7D0 /* SpoqaHanSansNeo-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,7 +195,6 @@
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
-				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
 			);
@@ -256,20 +248,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		13B07F8E1A680F5B00A75B9A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
-				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				89A9F793732242449B88BF9E /* SpoqaHanSansNeo-Bold.ttf in Resources */,
-				3C1C93877DAC4E008A6FB5A6 /* SpoqaHanSansNeo-Light.ttf in Resources */,
-				C1E5003BFE1744E5B2F0D9D7 /* SpoqaHanSansNeo-Medium.ttf in Resources */,
-				F7BE81CA2B4B4F6E986061A8 /* SpoqaHanSansNeo-Regular.ttf in Resources */,
-				9100FF5E0B2F4DD5B20D905E /* SpoqaHanSansNeo-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
