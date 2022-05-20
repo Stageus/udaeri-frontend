@@ -3,7 +3,14 @@ import { Dimensions } from "react-native";
 
 const { width, height } = Dimensions.get("window");
 
-export const Container = styled.TouchableOpacity`
+interface color {
+    color : string;
+}
+interface text {
+    id : string;
+}
+
+export const Container = styled.TouchableOpacity<color>`
     background-color: ${(props) => props.color};
     width: ${width * 0.6}px;
     height: 50px;
@@ -16,7 +23,7 @@ export const Container = styled.TouchableOpacity`
     margin: 5px;
 `
 
-export const Text = styled.Text`
+export const Text = styled.Text<text>`
     color: ${(props) => (props.id === "kakao" ? css`#000000` : css`#ffffff`)};
 `
 
