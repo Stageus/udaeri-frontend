@@ -10,8 +10,7 @@ import Map from "../screens/Map/map.component";
 import MiddleCat from "../screens/MiddleCat/MiddleCat.component";
 import LoginPage from "../screens/LoginPage/LoginPage.component";
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
-import { checkToken } from "../../store/slice/userSlice";
-
+import axios from "axios";
 export type RootStackParamList = {
   LoginPage : undefined;
   Map: undefined;
@@ -23,16 +22,28 @@ const RootStack = createStackNavigator<RootStackParamList>();
 
 const RootNavigator = (): JSX.Element => {
   
-  const dispatch = useAppDispatch();
-  dispatch(checkToken(true))
+// const dispatch = useAppDispatch();
+//   dispatch(checkToken(false))
+  const isToken = useAppSelector((state) => state.userReducer.isToken);
+  console.log(isToken)
+
+  const url = "https://udaeri.com";
+  axios.defaults.baseURL = url;
   
   return (
     <NavigationContainer>
       <RootStack.Navigator screenOptions={{ headerShown: false }}>
-        <RootStack.Screen name="LoginPage" component={LoginPage} />
-        <RootStack.Screen name="BottomNavigator" component={BottomNavigator} />
-        <RootStack.Screen name="Map" component={Map} />
-        <RootStack.Screen name="MiddleCat" component={MiddleCat} />
+        {!isToken ? (
+            <RootStack.Screen name="LoginPage" component={LoginPage} />
+         )
+        : (
+            <>
+              <RootStack.Screen name="BottomNavigator" component={BottomNavigator} />
+              <RootStack.Screen name="Map" component={Map} />
+              <RootStack.Screen name="MiddleCat" component={MiddleCat} />
+            </>
+          )
+        }
       </RootStack.Navigator>
     </NavigationContainer>
   );
