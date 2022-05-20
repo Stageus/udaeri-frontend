@@ -4,13 +4,9 @@ import theme from "../../style/theme";
 export const JjimContainer = styled.TouchableOpacity`
   width: ${theme.width * 0.35}px;
   height: ${theme.width * 0.35}px;
-  background-color: ${theme.colors.BGColor1}
+  background-color: ${theme.colors.BGColor1};
   margin-right: 15px;
   border-radius: 20px;
-<<<<<<< HEAD
-  padding: 10px;
-`;
-=======
   padding: 10px 10px 15px 10px;
   display: flex;
   justify-content: space-around;
@@ -40,4 +36,3 @@ export const ShopName = styled.Text`
   font-weight: bold;
   color: #000;
 `;
->>>>>>> stageus/develop
