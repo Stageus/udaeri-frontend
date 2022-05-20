@@ -1,10 +1,11 @@
-import React from 'react';
 import { View } from "react-native";
 
+import React, {useState} from 'react';
 import { SafeAreaViewComp } from '../../components/safeAreaViewComp/safeAreaViewComp';
 import { Container, LoginBlock, LogoBlock, LogoText, SubLogoText } from './LoginPage.style';
 
 import SNSLoginBar from '../../components/SNSLoginBar/SNSLoginBar.component';
+
 const LoginPage = () : JSX.Element => {
     return (
         <SafeAreaViewComp>

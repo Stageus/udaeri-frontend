@@ -1,4 +1,12 @@
-import React from "react";
+import {
+  KakaoOAuthToken,
+  KakaoProfile,
+  getProfile as getKakaoProfile,
+  login,
+  logout,
+  unlink,
+} from '@react-native-seoul/kakao-login';
+import React, {useState} from 'react';
 import { Container, Logo, Text } from "./SNSLoginBar.style";
 import { useNavigation } from "@react-navigation/native";
 
@@ -23,11 +31,17 @@ interface Props {
 const SNSLoginBar = ({ id, moveScreen }: Props) => {
     const navigation = useNavigation();
 
+    const [result, setResult] = useState<string>('');
+
+    const signInWithKakao = async (): Promise<void> => {
+        const token: KakaoOAuthToken = await login();
+        setResult(JSON.stringify(token));
+    };
+
+    console.log(result);
+
     return (
-      <Container color={logoData[id].color}
-        onPress = {() => {
-            navigation.navigate(moveScreen)
-        }}>
+      <Container color={logoData[id].color} onPress={() => signInWithKakao()}>
         <Logo source={logoData[id].src} />
         <Text id={id}>{logoData[id].text}</Text>
       </Container>
