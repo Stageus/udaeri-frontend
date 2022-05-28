@@ -21,7 +21,7 @@ export const Top = {
   Nickname: styled.Text`
     color: ${theme.colors.main};
     font-size: 20px;
-    font-family: ${theme.font.Medium};
+    //font-family: ${theme.font.Medium};
     margin-right: 10px;
   `,
 };
