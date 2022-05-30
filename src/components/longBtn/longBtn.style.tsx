@@ -14,5 +14,5 @@ export const LongBtnContainer = styled.TouchableOpacity`
 export const LongBtnTitle = styled.Text`
   font-size: 20px;
   color: #fff;
-  font-family: ${theme.font.Medium};
+  //font-family: ${theme.font.Medium};
 `;
