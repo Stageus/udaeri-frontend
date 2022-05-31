@@ -9,13 +9,16 @@ import BottomNavigator from "./bottomNavigator";
 import Map from "../screens/Map/map.component";
 import MiddleCat from "../screens/MiddleCat/MiddleCat.component";
 import LoginPage from "../screens/LoginPage/LoginPage.component";
+import StoreList from "../screens/StoreList/StoreList.component";
 import { useAppSelector, useAppDispatch } from "../../store/hooks";
 import axios from "axios";
+
 export type RootStackParamList = {
   LoginPage : undefined;
   Map: undefined;
   BottomNavigator: undefined;
   MiddleCat: undefined;
+  StoreList: undefined;
 };
 
 const RootStack = createStackNavigator<RootStackParamList>();
@@ -41,6 +44,7 @@ const RootNavigator = (): JSX.Element => {
               <RootStack.Screen name="BottomNavigator" component={BottomNavigator} />
               <RootStack.Screen name="Map" component={Map} />
               <RootStack.Screen name="MiddleCat" component={MiddleCat} />
+              <RootStack.Screen name="StoreList" component={StoreList} />
             </>
           )
         }

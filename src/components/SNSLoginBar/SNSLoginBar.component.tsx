@@ -47,7 +47,6 @@ const SNSLoginBar = ({ id, moveScreen }: Props) => {
   };
 
   const getKakaoProfile = async (): Promise<void> => {
-    console.log("Gg");
     const profile = await getProfile();
     setUserId(profile.id);
     PostAccessCode();

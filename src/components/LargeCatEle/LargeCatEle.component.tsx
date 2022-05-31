@@ -7,8 +7,8 @@ import {
  
 import { SvgXml } from "react-native-svg";
 import { useNavigation } from "@react-navigation/native";
-import MiddleCat from "../../screens/MiddleCat/MiddleCat.component";
-
+import { useAppDispatch } from "../../../store/hooks";
+import { setCurLargeCat } from "../../../store/slice/categorySlice"
 interface Props {
     key : number,
     name : string,
@@ -18,7 +18,10 @@ interface Props {
 
 const LargeCatEle = ({name, icon} : Props) : JSX.Element => {
     const navigation = useNavigation();
+    const dispatch = useAppDispatch();
+
     const onMove = () => {
+        dispatch(setCurLargeCat(name))
         navigation.navigate("MiddleCat", { catName: name });
     }
     return (

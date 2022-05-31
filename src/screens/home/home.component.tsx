@@ -1,19 +1,12 @@
-import React, { useState, useEffect } from "react";
-import { SafeAreaView, View } from "react-native";
-import styled from "styled-components/native";
+import React from "react";
 
-// import {useAppDispatch, useAppSelector} from '../../../store/hooks';
-// import {ageCounter, nameChange} from '../../../store/slice/userSlice';
 import { Container, Header, MiddleBlock } from "./Home.style";
 import { LongBtn } from "../../components/longBtn/longBtn.component";
 import { HomeJjimEle } from "../../components/home-jjimEle/home-jjimEle.component";
 import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
 import { ScrollView } from "react-native-gesture-handler";
 import LargeCatEle from "../../components/LargeCatEle/LargeCatEle.component";
-import MagniBtn from "../../components/HeaderBar/MagniBtn/MagniBtn.component";
-import { checkToken } from "../../../store/slice/userSlice";
 
-import { useAppSelector, useAppDispatch } from "../../../store/hooks";
 import { FoodIcon, SalonIcon, HospitalIcon, CafeIcon, BeerIcon, ShopIcon, ServiceIcon, PlayIcon } from '../../assets/icon/icons';
 
 
