@@ -1,23 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { createMaterialTopTabNavigator } from "@react-navigation/material-top-tabs";
+import { useAppSelector, useAppDispatch } from "../../store/hooks";
+import EachStoreList from "../screens/StoreList/EachStoreList/EachStoreList.component";
+import axios from "axios";
+import { setStoreList } from "../../store/slice/categorySlice";
 const Tab = createMaterialTopTabNavigator();
 
 interface Props {
   title : string;
 }
 
-const StoreListNavi = ({title} : Props) => {
+interface Item {
+  name : string;
+}
 
-    const MidCatList = {
+const StoreListNavi = ({ title } : Props) => {
+  const dispatch = useAppDispatch();
+  const midCatList = useAppSelector((state) => state.categoryReducer.midCatList);
+  const curLargeCat = useAppSelector((state) => state.categoryReducer.curLargeCat)
 
-    }
+  const getStore = async () => {
+    await axios
+      .get("/l-categories/" + curLargeCat + "/m-categories/all/stores/")
+      .then((res) => {
+        dispatch(setStoreList(res.data))
+      })
+      .catch((err) => {
+        console.log("error");
+        console.log(err);
+      });
+  }
+
+  useEffect(() => {
+    getStore();
+  }, [])
 
   return (
     <Tab.Navigator
       tabBarOptions={{
         labelStyle: {
           fontSize: 14,
-          fontFamily: "Medium",
         },
         indicatorStyle: {
           borderColor: "#ff9933",
@@ -30,16 +52,16 @@ const StoreListNavi = ({title} : Props) => {
         activeTintColor: "#ff9933",
         inactiveTintColor: "gray",
       }}
-      initialRouteName={props.title}
+      initialRouteName={title}
       tabBarLabel={{
         focused: false,
       }}
     >
-      {MidCatList.map((item, index) => (
+      {midCatList && midCatList.map((item, index) => (
         <Tab.Screen
-          name={item}
+          name={item.name}
           children={() => (
-            <Store key={item} midCat={item} navigation={props.navigation} />
+            <EachStoreList key={index} midCat={item} />
           )}
         />
       ))}
