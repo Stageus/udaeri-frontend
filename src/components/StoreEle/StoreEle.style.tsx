@@ -4,7 +4,7 @@ import theme from "../../style/theme";
 export const Container = styled.TouchableOpacity`
     flex-Direction: row;
     padding: 20px;
-    border-Bottom-Color: ${theme.colors.lineColor1};
+    border-Bottom-Color: ${theme.colors.lineColor2};
     border-Bottom-Width: 1px;
     align-Items: center;
     height: 100px;
@@ -23,11 +23,10 @@ export const StoreThumbnail = styled.View`
 export const ContentContainer = styled.View`
 `
 export const StoreName = styled.Text`
-    font-Family: Medium;
-    font-Size: 20px;
+    font-Size: 18px;
 `
 export const Content = styled.Text`
-    font-Size: 18px;
+    font-Size: 16px;
 `
 export const Wrap = styled.View`
     flex-direction: row;

@@ -5,7 +5,7 @@ export interface categoryState {
   midCatList: string[]; // 중분류 리스트
   curLargeCat: string; // 현재 선택된 대분류
   curMidCat: string; // 현재 선택된 중분류
-  curStoreList : string[]; // 현재 선택된 분류의 상점 리스트 
+  storeList : string[]; // 현재 선택된 분류의 상점 리스트 
 }
 
 const initialState: categoryState = {
@@ -13,7 +13,7 @@ const initialState: categoryState = {
   midCatList: [],
   curLargeCat: "",
   curMidCat: "",
-  curStoreList : [],
+  storeList : [],
 };
 
 export const categorySlice = createSlice({
@@ -32,11 +32,14 @@ export const categorySlice = createSlice({
     setCurMidCat: (state, action) => {
       state.curMidCat = action.payload;
     },
-    addCurStoreList : (state, action) => {
-      console.log(action)
+    setStoreList : (state, action) => {
+      state.storeList = action.payload;
+    },
+    addStoreList : (state, action) => {
+      console.log(action.payload)
     }
   },
 });
 
-export const { setLargeCat, setMidCat, setCurLargeCat, setCurMidCat, addCurStoreList } = categorySlice.actions;
+export const { setLargeCat, setMidCat, setCurLargeCat, setCurMidCat, setStoreList, addStoreList } = categorySlice.actions;
 export default categorySlice.reducer;

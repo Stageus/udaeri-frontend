@@ -1293,6 +1293,11 @@
   "resolved" "https://registry.npmjs.org/@react-native-community/eslint-plugin/-/eslint-plugin-1.2.0.tgz"
   "version" "1.2.0"
 
+"@react-native-community/viewpager@^5.0.11":
+  "integrity" "sha512-eboJwbDQjP1qJP3LFzVspgh88IGNF07S2qpU296j+4kL0inVuL+HXs81SuczMGtJmDZ4u19RNEBVq79of/h+jQ=="
+  "resolved" "https://registry.npmjs.org/@react-native-community/viewpager/-/viewpager-5.0.11.tgz"
+  "version" "5.0.11"
+
 "@react-native-seoul/kakao-login@^4.0.0":
   "integrity" "sha512-eWkHhQc6FtaAYmscCJN+c4wEe6XIPOwLGZmfSChU9VYNi4JDX9P/XlfQppsu1njkZPRzDpu5KlOE3sIbLSfT6g=="
   "resolved" "https://registry.npmjs.org/@react-native-seoul/kakao-login/-/kakao-login-4.0.0.tgz"
