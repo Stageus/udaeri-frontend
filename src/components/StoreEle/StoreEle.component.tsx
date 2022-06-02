@@ -8,7 +8,6 @@ interface Prop {
     storeName : string;
     content : string;
     location : string;
-    likes : number;
 }
 
 const StoreEle = ({storeName, content, location, likes} : Prop) : JSX.Element => {

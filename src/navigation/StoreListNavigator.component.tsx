@@ -61,7 +61,7 @@ const StoreListNavi = ({ title } : Props) => {
         <Tab.Screen
           name={item.name}
           children={() => (
-            <EachStoreList key={index} midCat={item} />
+            <EachStoreList key={index} curMidCat={item.name} />
           )}
         />
       ))}
