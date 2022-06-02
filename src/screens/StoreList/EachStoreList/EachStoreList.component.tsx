@@ -16,13 +16,17 @@ const StoreElement = ({ item }) => {
     )
   }
 
-const EachStoreList = () : JSX.Element => {
+interface Props {
+  curMidCat : string;
+}
+
+const EachStoreList = ({ curMidCat } : Props) : JSX.Element => {
     const dispatch = useAppDispatch();
 
     const curLargeCat = useAppSelector((state) => state.categoryReducer.curLargeCat);
-    const curMidCat = useAppSelector((state) => state.categoryReducer.curMidCat);
+    const midCat = curMidCat;
     const storeList = useAppSelector((state) => state.categoryReducer.storeList);
-    
+    console.log(storeList[midCat])
     const [cnt, setCnt] = useState(1);
 
     useEffect(() => {
@@ -47,7 +51,7 @@ const EachStoreList = () : JSX.Element => {
 
     return (
         <Flatlist
-            data={storeList[curMidCat]}
+            data={storeList[midCat]}
             renderItem={(item) => StoreElement(item)}
             keyExtractor={(item) => String(item.store_name)}
             onEndReachedThreshold={0.01}
