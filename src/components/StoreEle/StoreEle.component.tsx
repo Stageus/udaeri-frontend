@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, StoreThumbnail, ContentContainer, StoreName, Content, Wrap, Location, Distance, Likes} from './StoreEle.style'
+import { Container, StoreThumbnail, ContentContainer, StoreName, Content, Wrap, Location, Distance, Likes } from './StoreEle.style'
 import { useNavigation } from '@react-navigation/native';
 import { useAppSelector, useAppDispatch } from '../../../store/hooks';
 import { setCurStore } from '../../../store/slice/curStateSlice';
@@ -16,8 +16,8 @@ const StoreEle = ({storeName, content, location, likes} : Prop) : JSX.Element =>
 
     return (
         <Container onPress={() => {
-            navigation.navigate('StorePage', { key: storeName });
             dispatch(setCurStore(storeName));
+            navigation.navigate("StorePage");
         }}>
             <StoreThumbnail>
             </StoreThumbnail>
