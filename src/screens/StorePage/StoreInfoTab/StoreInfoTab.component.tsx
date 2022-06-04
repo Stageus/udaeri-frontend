@@ -3,6 +3,8 @@ import styled from "styled-components/native";
 import axios from "axios";
 import { useAppSelector } from "../../../../store/hooks";
 import { Container, StoreName, StoreInfoText, StoreInfoTitle, StoreInfoWrap } from './StoreInfoTab.style'
+import StoreInfoEle from "../../../components/StoreInfoEle/StoreInfoEle.component";
+
 const StoreInfoTap = () => {
     const curLargeCat = useAppSelector((state) => state.categoryReducer.curLargeCat);
     const curMidCat = useAppSelector((state) => state.categoryReducer.curMidCat);
@@ -22,8 +24,8 @@ const StoreInfoTap = () => {
               "/information"
           )
           .then((res) => {
-            console.log("가게정보: " + JSON.stringify(res.data));
-             // setStoreInfo(res.data);
+            // console.log("가게정보: " + JSON.stringify(res.data));
+            setStoreInfo(res.data);
             // setCoordinate({
             //   latitude: res.data.latitude,
             //   longitude: res.data.longitude,
@@ -43,10 +45,17 @@ const StoreInfoTap = () => {
       
     return (
         <Container>
-            <StoreName></StoreName>
-            {/* <StoreInfoEle> </StoreInfoEle>
-            <StoreInfoEle> </StoreInfoEle>
-            <StoreInfoEle> </StoreInfoEle> */}
+            <StoreName>{storeInfo.store}</StoreName>
+            <StoreInfoEle infoTitle="전화번호" infoContent={storeInfo.call_number}> </StoreInfoEle>
+            <StoreInfoEle 
+              infoTitle="휴무일/영업시간"
+              infoContent={
+                storeInfo.day_off +
+                " / " +
+                storeInfo.opening_hours 
+            }> </StoreInfoEle>
+            <StoreInfoEle infoTitle="가격대" infoContent={storeInfo.prices}> </StoreInfoEle>
+            <StoreInfoEle infoTitle="주소" infoContent={storeInfo.location} />
             <StoreInfoWrap>
                 <StoreInfoTitle></StoreInfoTitle>
             </StoreInfoWrap>
