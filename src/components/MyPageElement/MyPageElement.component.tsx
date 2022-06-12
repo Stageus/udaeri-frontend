@@ -1,35 +1,29 @@
 import React from "react";
 import { View, Text, TouchableOpacity } from "react-native";
 import { ElementContainer, ElementText } from "./MyPageElement.style";
-
-import { useAppSelector, useAppDispatch } from "../../../store/hooks";
-import { checkToken } from "../../../store/slice/userSlice";
-import AsyncStorage from "@react-native-async-storage/async-storage";
-
-
-import {
-  getProfile as getKakaoProfile,
-  logout,
-} from '@react-native-seoul/kakao-login';
+import { useAppSelector, useAppDispatch } from "../../hooks/index.hooks";
+import { handleLogin } from "../../store/slice/userSlice";
+import { expireToken } from "../../utils/aboutToken";
+import { logout } from "@react-native-seoul/kakao-login";
 
 const MyPageElement = (props): JSX.Element => {
-  const { title } = props;
   const dispatch = useAppDispatch();
-
-  const TOKEN_KEY = "@userKey";
-  
-  const tokenExpire = () => {
-    AsyncStorage.removeItem(TOKEN_KEY);
-    dispatch(checkToken(false));
-  };
+  const { title } = props;
 
   const signOutWithKakao = async (): Promise<void> => {
+    expireToken();
+    dispatch(handleLogin(false));
     const message = await logout();
-    tokenExpire();
+  };
+
+  const handleOnPress = () => {
+    if (props.title === "로그아웃") {
+      signOutWithKakao();
+    }
   };
 
   return (
-    <ElementContainer onPress={() => signOutWithKakao()}>
+    <ElementContainer onPress={handleOnPress}>
       <ElementText>{title}</ElementText>
     </ElementContainer>
   );
