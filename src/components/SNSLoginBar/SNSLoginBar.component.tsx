@@ -7,9 +7,13 @@ import {
 import React, { useState } from "react";
 import { Container, Logo, Text } from "./SNSLoginBar.style";
 import axios from "axios";
-import { useAppSelector, useAppDispatch } from "../../../store/hooks";
-import { checkToken } from "../../../store/slice/userSlice";
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { useAppSelector, useAppDispatch } from "../../hooks/index.hooks";
+import {
+  handleLogin,
+  setUserNickname,
+  checkSponsor,
+} from "../../store/slice/userSlice";
+import { saveToken } from "../../utils/aboutToken";
 
 const logoData = {
   kakao: {
@@ -40,12 +44,6 @@ const SNSLoginBar = ({ id, moveScreen }: Props) => {
     getKakaoProfile();
   };
 
-  const TOKEN_KEY = "@userKey";
-
-  const saveToken = async (token: string) => {
-    await AsyncStorage.setItem(TOKEN_KEY, token);
-  };
-
   const getKakaoProfile = async (): Promise<void> => {
     const profile = await getProfile();
     setUserId(profile.id);
@@ -53,7 +51,7 @@ const SNSLoginBar = ({ id, moveScreen }: Props) => {
   };
 
   const PostAccessCode = async () => {
-    await axios
+    axios
       .post("/oauth", {
         id: userID,
         platform: "kakao",
@@ -61,7 +59,17 @@ const SNSLoginBar = ({ id, moveScreen }: Props) => {
       .then((res) => {
         console.log("access token post 성공");
         saveToken(res.data.token);
-        dispatch(checkToken(res.data.success));
+        dispatch(handleLogin(res.data.success));
+
+        axios.defaults.headers.common["Authorization"] = res.data.token;
+        axios
+          .get("/users")
+          .then((res) => {
+            console.log("회원정보 받아옴");
+            dispatch(setUserNickname(res.data.nickname)),
+              dispatch(checkSponsor(res.data.sponsor));
+          })
+          .catch((err) => console.log("회웑 어보 못 받아옴,", err));
       })
       .catch((err) => {
         console.log("server로 access code post 실패");
