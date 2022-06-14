@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderBar from "../../components/HeaderBar/HeaderBar.component";
-import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
+import SafeAreaViewComp from "../../components/safeAreaViewComp/safeAreaViewComp";
 import StoreListNavi from "../../navigation/StoreListNavigator.component";
 import { Conatiner, StoreBlock, Content } from "./StoreList.style";
 import { useAppSelector } from "../../hooks/index.hooks";

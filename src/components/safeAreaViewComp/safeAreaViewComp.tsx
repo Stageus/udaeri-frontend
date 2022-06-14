@@ -16,8 +16,8 @@ interface SafeAreaViewProp {
   children: JSX.Element;
 }
 
-export const SafeAreaViewComp = ({
-  children,
-}: SafeAreaViewProp): JSX.Element => {
+const SafeAreaViewComp = ({ children }: SafeAreaViewProp): JSX.Element => {
   return <SafeAreaView>{children}</SafeAreaView>;
 };
+
+export default SafeAreaViewComp;

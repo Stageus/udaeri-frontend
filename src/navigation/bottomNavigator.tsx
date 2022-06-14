@@ -5,7 +5,7 @@ import theme from "../style/theme";
 import Home from "../screens/Home/Home.component";
 import Search from "../screens/Search/search.component";
 import Jjim from "../screens/Jjim/jjim.component";
-import MyPage from "../screens/MyPage/My-page.component";
+import MyPage from "../screens/MyPage/my-page.component";
 
 import { SvgXml } from "react-native-svg";
 import {
