@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
+import SafeAreaViewComp from "../../components/safeAreaViewComp/safeAreaViewComp";
 import HeaderBar from "../../components/HeaderBar/HeaderBar.component";
 import { View, ScrollView } from "react-native";
 import { MainContainer } from "./MiddleCat.style";

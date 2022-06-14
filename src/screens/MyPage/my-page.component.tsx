@@ -4,7 +4,7 @@ import { SafeAreaView, Text, TouchableOpacity } from "react-native";
 import { SvgXml } from "react-native-svg";
 import { CrownIcon, GearIcon } from "../../assets/icon/icons";
 import { ScrollView, Container, Top, Mid } from "./My-page.style";
-import { SafeAreaViewComp } from "../../components/safeAreaViewComp/safeAreaViewComp";
+import SafeAreaViewComp from "../../components/safeAreaViewComp/safeAreaViewComp";
 import { logout } from "@react-native-seoul/kakao-login";
 import HeaderBar from "../../components/HeaderBar/HeaderBar.component";
 import MyPageElement from "../../components/MyPageElement/MyPageElement.component";
