@@ -21,3 +21,22 @@ export const SearchInputText = styled.TextInput`
   width: 90%;
   padding: 12px;
 `;
+
+export const EmptySearchResulContainer = styled.View`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+`;
+
+export const EmptySearchResulText = styled.Text`
+  font-size: 24px;
+  color: ${theme.colors.fontColor2};
+  margin-top: 15px;
+  font-weight: bold;
+`;
+
+export const SearchResultScrollView = styled.ScrollView`
+  margin-top: 15px;
+  height: 100%;
+`;
