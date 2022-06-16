@@ -6,12 +6,13 @@ import { Container, StoreName, StoreInfoText, StoreInfoTitle, StoreInfoWrap } fr
 import StoreInfoEle from "../../../components/StoreInfoEle/StoreInfoEle.component";
 
 const StoreInfoTap = () => {
-    const curLargeCat = useAppSelector((state) => state.categoryReducer.curLargeCat);
-    const curMidCat = useAppSelector((state) => state.categoryReducer.curMidCat);
-    const curStore = useAppSelector((state) => state.curStateReducer.curStore);
-    const [storeInfo, setStoreInfo] = useState({});
-    const [initialRegion, setInitialRegion] = useState({});
-
+  const curLargeCat = useAppSelector(
+    (state) => state.categoryReducer.curLargeCat
+  );
+  const curMidCat = useAppSelector((state) => state.categoryReducer.curMidCat);
+  const curStore = useAppSelector((state) => state.curStateReducer.curStore);
+  const [storeInfo, setStoreInfo] = useState({});
+  const [initialRegion, setInitialRegion] = useState({});
     useEffect(() => {
         axios
           .get(
