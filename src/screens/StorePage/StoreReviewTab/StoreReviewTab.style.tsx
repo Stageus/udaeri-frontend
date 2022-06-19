@@ -13,7 +13,7 @@ export const ScoreContainer = styled.View`
     border-Bottom-Width: 1px;
     border-Bottom-Color: #d3d3d3;
 `
-export const SoresSummaryWrap = styled.View`
+export const ScoresSummaryWrap = styled.View`
 `
 export const ReviewContainer = styled.View`
     flex: 1;

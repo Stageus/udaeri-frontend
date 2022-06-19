@@ -3,7 +3,7 @@ import { createMaterialTopTabNavigator } from '@react-navigation/material-top-ta
 
 import StoreInfoTab from '../screens/StorePage/StoreInfoTab/StoreInfoTab.component';
 import StoreMenuTab from '../screens/StorePage/StoreMenuTab/StoreMenuTab.component';
-import StoreReviewTab from '../Screens/StorePage/StoreReviewTab/StoreReviewTab.component';
+import StoreReviewTab from '../screens/StorePage/StoreReviewTab/StoreReviewTab.component';
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -20,7 +20,7 @@ const StoreTapNavigator = () => {
         }}>
             <Tab.Screen name="정보" component={StoreInfoTab} />
             <Tab.Screen name="메뉴" component={StoreMenuTab} />
-            <Tab.Screen name="리뷰" component={StoreMenuTab} />
+            <Tab.Screen name="리뷰" component={StoreReviewTab} />
         </Tab.Navigator>
     );
 }

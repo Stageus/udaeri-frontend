@@ -1589,44 +1589,44 @@
 		46EB2E0000EA30 /* RNKakaoLogins.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006040 /* RNKakaoLogins.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46EB2E0000EA90 /* kakao-login-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E0000EA80 /* kakao-login-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		46EB2E0000EAD0 /* kakao-login-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0000EAC0 /* kakao-login-dummy.m */; };
-		46EB2E0000EB60 /* RNCSafeAreaContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006080 /* RNCSafeAreaContext.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EB70 /* RNCSafeAreaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000060A0 /* RNCSafeAreaProvider.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EB80 /* RNCSafeAreaProviderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000060C0 /* RNCSafeAreaProviderManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EB90 /* RNCSafeAreaShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000060E0 /* RNCSafeAreaShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EBA0 /* RNCSafeAreaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006100 /* RNCSafeAreaUtils.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EBB0 /* RNCSafeAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006120 /* RNCSafeAreaView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EBC0 /* RNCSafeAreaViewEdges.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006140 /* RNCSafeAreaViewEdges.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EBD0 /* RNCSafeAreaViewLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006160 /* RNCSafeAreaViewLocalData.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EBE0 /* RNCSafeAreaViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006180 /* RNCSafeAreaViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EBF0 /* RNCSafeAreaViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000061A0 /* RNCSafeAreaViewMode.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
-		46EB2E0000EC00 /* RNCSafeAreaContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006070 /* RNCSafeAreaContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC10 /* RNCSafeAreaProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006090 /* RNCSafeAreaProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC20 /* RNCSafeAreaProviderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000060B0 /* RNCSafeAreaProviderManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC30 /* RNCSafeAreaShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000060D0 /* RNCSafeAreaShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC40 /* RNCSafeAreaUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000060F0 /* RNCSafeAreaUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC50 /* RNCSafeAreaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006110 /* RNCSafeAreaView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC60 /* RNCSafeAreaViewEdges.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006130 /* RNCSafeAreaViewEdges.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC70 /* RNCSafeAreaViewLocalData.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006150 /* RNCSafeAreaViewLocalData.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC80 /* RNCSafeAreaViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006170 /* RNCSafeAreaViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EC90 /* RNCSafeAreaViewMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006190 /* RNCSafeAreaViewMode.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000ECF0 /* react-native-safe-area-context-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0000ECE0 /* react-native-safe-area-context-dummy.m */; };
-		46EB2E0000ED80 /* RCTConvert+UIPageViewControllerNavigationOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000061C0 /* RCTConvert+UIPageViewControllerNavigationOrientation.m */; };
-		46EB2E0000ED90 /* RCTConvert+UIPageViewControllerTransitionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000061E0 /* RCTConvert+UIPageViewControllerTransitionStyle.m */; };
-		46EB2E0000EDA0 /* RCTOnPageScrollEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006200 /* RCTOnPageScrollEvent.m */; };
-		46EB2E0000EDB0 /* RCTOnPageScrollStateChanged.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006220 /* RCTOnPageScrollStateChanged.m */; };
-		46EB2E0000EDC0 /* RCTOnPageSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006240 /* RCTOnPageSelected.m */; };
-		46EB2E0000EDD0 /* ReactNativePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006260 /* ReactNativePageView.m */; };
-		46EB2E0000EDE0 /* ReactViewPagerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006280 /* ReactViewPagerManager.m */; };
-		46EB2E0000EDF0 /* UIViewController+CreateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000062A0 /* UIViewController+CreateExtension.m */; };
-		46EB2E0000EE00 /* RCTConvert+UIPageViewControllerNavigationOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000061B0 /* RCTConvert+UIPageViewControllerNavigationOrientation.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE10 /* RCTConvert+UIPageViewControllerTransitionStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000061D0 /* RCTConvert+UIPageViewControllerTransitionStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE20 /* RCTOnPageScrollEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000061F0 /* RCTOnPageScrollEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE30 /* RCTOnPageScrollStateChanged.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006210 /* RCTOnPageScrollStateChanged.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE40 /* RCTOnPageSelected.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006230 /* RCTOnPageSelected.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE50 /* ReactNativePageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006250 /* ReactNativePageView.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE60 /* ReactViewPagerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006270 /* ReactViewPagerManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EE70 /* UIViewController+CreateExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006290 /* UIViewController+CreateExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		46EB2E0000EED0 /* react-native-viewpager-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0000EEC0 /* react-native-viewpager-dummy.m */; };
+		46EB2E0000EB60 /* RCTConvert+UIPageViewControllerNavigationOrientation.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006080 /* RCTConvert+UIPageViewControllerNavigationOrientation.m */; };
+		46EB2E0000EB70 /* RCTConvert+UIPageViewControllerTransitionStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000060A0 /* RCTConvert+UIPageViewControllerTransitionStyle.m */; };
+		46EB2E0000EB80 /* RCTOnPageScrollEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000060C0 /* RCTOnPageScrollEvent.m */; };
+		46EB2E0000EB90 /* RCTOnPageScrollStateChanged.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000060E0 /* RCTOnPageScrollStateChanged.m */; };
+		46EB2E0000EBA0 /* RCTOnPageSelected.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006100 /* RCTOnPageSelected.m */; };
+		46EB2E0000EBB0 /* ReactNativePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006120 /* ReactNativePageView.m */; };
+		46EB2E0000EBC0 /* ReactViewPagerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006140 /* ReactViewPagerManager.m */; };
+		46EB2E0000EBD0 /* UIViewController+CreateExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006160 /* UIViewController+CreateExtension.m */; };
+		46EB2E0000EBE0 /* RCTConvert+UIPageViewControllerNavigationOrientation.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006070 /* RCTConvert+UIPageViewControllerNavigationOrientation.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EBF0 /* RCTConvert+UIPageViewControllerTransitionStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006090 /* RCTConvert+UIPageViewControllerTransitionStyle.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EC00 /* RCTOnPageScrollEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000060B0 /* RCTOnPageScrollEvent.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EC10 /* RCTOnPageScrollStateChanged.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000060D0 /* RCTOnPageScrollStateChanged.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EC20 /* RCTOnPageSelected.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000060F0 /* RCTOnPageSelected.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EC30 /* ReactNativePageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006110 /* ReactNativePageView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EC40 /* ReactViewPagerManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006130 /* ReactViewPagerManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EC50 /* UIViewController+CreateExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006150 /* UIViewController+CreateExtension.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000ECB0 /* react-native-pager-view-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0000ECA0 /* react-native-pager-view-dummy.m */; };
+		46EB2E0000ED40 /* RNCSafeAreaContext.mm in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006180 /* RNCSafeAreaContext.mm */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000ED50 /* RNCSafeAreaProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000061A0 /* RNCSafeAreaProvider.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000ED60 /* RNCSafeAreaProviderManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000061C0 /* RNCSafeAreaProviderManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000ED70 /* RNCSafeAreaShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000061E0 /* RNCSafeAreaShadowView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000ED80 /* RNCSafeAreaUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006200 /* RNCSafeAreaUtils.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000ED90 /* RNCSafeAreaView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006220 /* RNCSafeAreaView.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000EDA0 /* RNCSafeAreaViewEdges.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006240 /* RNCSafeAreaViewEdges.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000EDB0 /* RNCSafeAreaViewLocalData.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006260 /* RNCSafeAreaViewLocalData.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000EDC0 /* RNCSafeAreaViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006280 /* RNCSafeAreaViewManager.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000EDD0 /* RNCSafeAreaViewMode.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000062A0 /* RNCSafeAreaViewMode.m */; settings = {COMPILER_FLAGS = "-DFOLLY_NO_CONFIG -DFOLLY_MOBILE=1 -DFOLLY_USE_LIBCPP=1 -Wno-comma -Wno-shorten-64-to-32"; }; };
+		46EB2E0000EDE0 /* RNCSafeAreaContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006170 /* RNCSafeAreaContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EDF0 /* RNCSafeAreaProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006190 /* RNCSafeAreaProvider.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE00 /* RNCSafeAreaProviderManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000061B0 /* RNCSafeAreaProviderManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE10 /* RNCSafeAreaShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000061D0 /* RNCSafeAreaShadowView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE20 /* RNCSafeAreaUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E000061F0 /* RNCSafeAreaUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE30 /* RNCSafeAreaView.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006210 /* RNCSafeAreaView.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE40 /* RNCSafeAreaViewEdges.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006230 /* RNCSafeAreaViewEdges.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE50 /* RNCSafeAreaViewLocalData.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006250 /* RNCSafeAreaViewLocalData.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE60 /* RNCSafeAreaViewManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006270 /* RNCSafeAreaViewManager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EE70 /* RNCSafeAreaViewMode.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EB2E00006290 /* RNCSafeAreaViewMode.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		46EB2E0000EED0 /* react-native-safe-area-context-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E0000EEC0 /* react-native-safe-area-context-dummy.m */; };
 		46EB2E0000EF60 /* RNCWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000062C0 /* RNCWebView.m */; };
 		46EB2E0000EF70 /* RNCWebViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E000062E0 /* RNCWebViewManager.m */; };
 		46EB2E0000EF80 /* RNCWKProcessPoolManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EB2E00006300 /* RNCWKProcessPoolManager.m */; };
@@ -1981,15 +1981,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BD9A27D8398DEB3205D3F8937B0672A0;
-			remoteInfo = "react-native-safe-area-context";
+			remoteGlobalIDString = 3A66A1242079D78DB9AE8A5F6D0586F3;
+			remoteInfo = "react-native-pager-view";
 		};
 		46EB2E0000F8B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1401264B2796C32CF72C6C2CB10D487;
-			remoteInfo = "react-native-viewpager";
+			remoteGlobalIDString = BD9A27D8398DEB3205D3F8937B0672A0;
+			remoteInfo = "react-native-safe-area-context";
 		};
 		46EB2E0000F8D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2338,15 +2338,15 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = BD9A27D8398DEB3205D3F8937B0672A0;
-			remoteInfo = "react-native-safe-area-context";
+			remoteGlobalIDString = 3A66A1242079D78DB9AE8A5F6D0586F3;
+			remoteInfo = "react-native-pager-view";
 		};
 		46EB2E0000FF10 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F1401264B2796C32CF72C6C2CB10D487;
-			remoteInfo = "react-native-viewpager";
+			remoteGlobalIDString = BD9A27D8398DEB3205D3F8937B0672A0;
+			remoteInfo = "react-native-safe-area-context";
 		};
 		46EB2E0000FF30 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -3577,43 +3577,43 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
+			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
+			remoteInfo = "React-Core";
+		};
+		46EB2E00011530 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46EB2E00000000 /* Project object */;
+			proxyType = 1;
 			remoteGlobalIDString = 1BEE828C124E6416179B904A9F66D794;
 			remoteInfo = React;
 		};
-		46EB2E00011530 /* PBXContainerItemProxy */ = {
+		46EB2E00011550 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = EC55D52694092A9D0E6A78EB01207EB5;
 			remoteInfo = "RCT-Folly";
 		};
-		46EB2E00011550 /* PBXContainerItemProxy */ = {
+		46EB2E00011570 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E7E7CE52C8C68B17224FF8C262D80ABF;
 			remoteInfo = RCTRequired;
 		};
-		46EB2E00011570 /* PBXContainerItemProxy */ = {
+		46EB2E00011590 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = D20469A9A1E5CFB26045EAEBE3F88E5E;
 			remoteInfo = RCTTypeSafety;
 		};
-		46EB2E00011590 /* PBXContainerItemProxy */ = {
+		46EB2E000115B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46EB2E00000000 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = B6D5DD49633DFF0657B8C3F08EB3ABA9;
 			remoteInfo = ReactCommon;
-		};
-		46EB2E000115B0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 46EB2E00000000 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7ACAA9BE580DD31A5CB9D97C45D9492D;
-			remoteInfo = "React-Core";
 		};
 		46EB2E000115D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -3631,6 +3631,7 @@
 		25BDA6E824AD6CBD857358A023C694AD /* KakaoSDKCommon */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = KakaoSDKCommon; path = libKakaoSDKCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		269BE773C9482484B70949A40F4EA525 /* React-RCTSettings */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-RCTSettings"; path = "libReact-RCTSettings.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E3F5BFF1292A762229F82B44BBC02DD /* Pods-udaeri3-udaeri3Tests */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "Pods-udaeri3-udaeri3Tests"; path = "libPods-udaeri3-udaeri3Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		33B49C6613B0AA0291A359688E245886 /* react-native-pager-view */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "react-native-pager-view"; path = "libreact-native-pager-view.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		37592FDAD45752511010F4B06AC57355 /* React-cxxreact */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-cxxreact"; path = "libReact-cxxreact.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CA7A9404CCDD6BA22C97F8348CE3209 /* glog */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = glog; path = libglog.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EB2E000003E0 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -5026,42 +5027,42 @@
 		46EB2E00006040 /* RNKakaoLogins.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RNKakaoLogins.h; sourceTree = "<group>"; };
 		46EB2E00006050 /* RNKakaoLogins.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RNKakaoLogins.m; sourceTree = "<group>"; };
 		46EB2E00006060 /* RNKakaoLogins.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RNKakaoLogins.swift; sourceTree = "<group>"; };
-		46EB2E00006070 /* RNCSafeAreaContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaContext.h; path = ios/RNCSafeAreaContext.h; sourceTree = "<group>"; };
-		46EB2E00006080 /* RNCSafeAreaContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RNCSafeAreaContext.mm; path = ios/RNCSafeAreaContext.mm; sourceTree = "<group>"; };
-		46EB2E00006090 /* RNCSafeAreaProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaProvider.h; path = ios/RNCSafeAreaProvider.h; sourceTree = "<group>"; };
-		46EB2E000060A0 /* RNCSafeAreaProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaProvider.m; path = ios/RNCSafeAreaProvider.m; sourceTree = "<group>"; };
-		46EB2E000060B0 /* RNCSafeAreaProviderManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaProviderManager.h; path = ios/RNCSafeAreaProviderManager.h; sourceTree = "<group>"; };
-		46EB2E000060C0 /* RNCSafeAreaProviderManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaProviderManager.m; path = ios/RNCSafeAreaProviderManager.m; sourceTree = "<group>"; };
-		46EB2E000060D0 /* RNCSafeAreaShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaShadowView.h; path = ios/RNCSafeAreaShadowView.h; sourceTree = "<group>"; };
-		46EB2E000060E0 /* RNCSafeAreaShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaShadowView.m; path = ios/RNCSafeAreaShadowView.m; sourceTree = "<group>"; };
-		46EB2E000060F0 /* RNCSafeAreaUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaUtils.h; path = ios/RNCSafeAreaUtils.h; sourceTree = "<group>"; };
-		46EB2E00006100 /* RNCSafeAreaUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaUtils.m; path = ios/RNCSafeAreaUtils.m; sourceTree = "<group>"; };
-		46EB2E00006110 /* RNCSafeAreaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaView.h; path = ios/RNCSafeAreaView.h; sourceTree = "<group>"; };
-		46EB2E00006120 /* RNCSafeAreaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaView.m; path = ios/RNCSafeAreaView.m; sourceTree = "<group>"; };
-		46EB2E00006130 /* RNCSafeAreaViewEdges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewEdges.h; path = ios/RNCSafeAreaViewEdges.h; sourceTree = "<group>"; };
-		46EB2E00006140 /* RNCSafeAreaViewEdges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewEdges.m; path = ios/RNCSafeAreaViewEdges.m; sourceTree = "<group>"; };
-		46EB2E00006150 /* RNCSafeAreaViewLocalData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewLocalData.h; path = ios/RNCSafeAreaViewLocalData.h; sourceTree = "<group>"; };
-		46EB2E00006160 /* RNCSafeAreaViewLocalData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewLocalData.m; path = ios/RNCSafeAreaViewLocalData.m; sourceTree = "<group>"; };
-		46EB2E00006170 /* RNCSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewManager.h; path = ios/RNCSafeAreaViewManager.h; sourceTree = "<group>"; };
-		46EB2E00006180 /* RNCSafeAreaViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewManager.m; path = ios/RNCSafeAreaViewManager.m; sourceTree = "<group>"; };
-		46EB2E00006190 /* RNCSafeAreaViewMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewMode.h; path = ios/RNCSafeAreaViewMode.h; sourceTree = "<group>"; };
-		46EB2E000061A0 /* RNCSafeAreaViewMode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewMode.m; path = ios/RNCSafeAreaViewMode.m; sourceTree = "<group>"; };
-		46EB2E000061B0 /* RCTConvert+UIPageViewControllerNavigationOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCTConvert+UIPageViewControllerNavigationOrientation.h"; path = "ios/RCTConvert+UIPageViewControllerNavigationOrientation.h"; sourceTree = "<group>"; };
-		46EB2E000061C0 /* RCTConvert+UIPageViewControllerNavigationOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+UIPageViewControllerNavigationOrientation.m"; path = "ios/RCTConvert+UIPageViewControllerNavigationOrientation.m"; sourceTree = "<group>"; };
-		46EB2E000061D0 /* RCTConvert+UIPageViewControllerTransitionStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCTConvert+UIPageViewControllerTransitionStyle.h"; path = "ios/RCTConvert+UIPageViewControllerTransitionStyle.h"; sourceTree = "<group>"; };
-		46EB2E000061E0 /* RCTConvert+UIPageViewControllerTransitionStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+UIPageViewControllerTransitionStyle.m"; path = "ios/RCTConvert+UIPageViewControllerTransitionStyle.m"; sourceTree = "<group>"; };
-		46EB2E000061F0 /* RCTOnPageScrollEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTOnPageScrollEvent.h; path = ios/RCTOnPageScrollEvent.h; sourceTree = "<group>"; };
-		46EB2E00006200 /* RCTOnPageScrollEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTOnPageScrollEvent.m; path = ios/RCTOnPageScrollEvent.m; sourceTree = "<group>"; };
-		46EB2E00006210 /* RCTOnPageScrollStateChanged.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTOnPageScrollStateChanged.h; path = ios/RCTOnPageScrollStateChanged.h; sourceTree = "<group>"; };
-		46EB2E00006220 /* RCTOnPageScrollStateChanged.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTOnPageScrollStateChanged.m; path = ios/RCTOnPageScrollStateChanged.m; sourceTree = "<group>"; };
-		46EB2E00006230 /* RCTOnPageSelected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTOnPageSelected.h; path = ios/RCTOnPageSelected.h; sourceTree = "<group>"; };
-		46EB2E00006240 /* RCTOnPageSelected.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTOnPageSelected.m; path = ios/RCTOnPageSelected.m; sourceTree = "<group>"; };
-		46EB2E00006250 /* ReactNativePageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactNativePageView.h; path = ios/ReactNativePageView.h; sourceTree = "<group>"; };
-		46EB2E00006260 /* ReactNativePageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReactNativePageView.m; path = ios/ReactNativePageView.m; sourceTree = "<group>"; };
-		46EB2E00006270 /* ReactViewPagerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactViewPagerManager.h; path = ios/ReactViewPagerManager.h; sourceTree = "<group>"; };
-		46EB2E00006280 /* ReactViewPagerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReactViewPagerManager.m; path = ios/ReactViewPagerManager.m; sourceTree = "<group>"; };
-		46EB2E00006290 /* UIViewController+CreateExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CreateExtension.h"; path = "ios/UIViewController+CreateExtension.h"; sourceTree = "<group>"; };
-		46EB2E000062A0 /* UIViewController+CreateExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CreateExtension.m"; path = "ios/UIViewController+CreateExtension.m"; sourceTree = "<group>"; };
+		46EB2E00006070 /* RCTConvert+UIPageViewControllerNavigationOrientation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCTConvert+UIPageViewControllerNavigationOrientation.h"; path = "ios/RCTConvert+UIPageViewControllerNavigationOrientation.h"; sourceTree = "<group>"; };
+		46EB2E00006080 /* RCTConvert+UIPageViewControllerNavigationOrientation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+UIPageViewControllerNavigationOrientation.m"; path = "ios/RCTConvert+UIPageViewControllerNavigationOrientation.m"; sourceTree = "<group>"; };
+		46EB2E00006090 /* RCTConvert+UIPageViewControllerTransitionStyle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "RCTConvert+UIPageViewControllerTransitionStyle.h"; path = "ios/RCTConvert+UIPageViewControllerTransitionStyle.h"; sourceTree = "<group>"; };
+		46EB2E000060A0 /* RCTConvert+UIPageViewControllerTransitionStyle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "RCTConvert+UIPageViewControllerTransitionStyle.m"; path = "ios/RCTConvert+UIPageViewControllerTransitionStyle.m"; sourceTree = "<group>"; };
+		46EB2E000060B0 /* RCTOnPageScrollEvent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTOnPageScrollEvent.h; path = ios/RCTOnPageScrollEvent.h; sourceTree = "<group>"; };
+		46EB2E000060C0 /* RCTOnPageScrollEvent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTOnPageScrollEvent.m; path = ios/RCTOnPageScrollEvent.m; sourceTree = "<group>"; };
+		46EB2E000060D0 /* RCTOnPageScrollStateChanged.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTOnPageScrollStateChanged.h; path = ios/RCTOnPageScrollStateChanged.h; sourceTree = "<group>"; };
+		46EB2E000060E0 /* RCTOnPageScrollStateChanged.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTOnPageScrollStateChanged.m; path = ios/RCTOnPageScrollStateChanged.m; sourceTree = "<group>"; };
+		46EB2E000060F0 /* RCTOnPageSelected.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RCTOnPageSelected.h; path = ios/RCTOnPageSelected.h; sourceTree = "<group>"; };
+		46EB2E00006100 /* RCTOnPageSelected.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RCTOnPageSelected.m; path = ios/RCTOnPageSelected.m; sourceTree = "<group>"; };
+		46EB2E00006110 /* ReactNativePageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactNativePageView.h; path = ios/ReactNativePageView.h; sourceTree = "<group>"; };
+		46EB2E00006120 /* ReactNativePageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReactNativePageView.m; path = ios/ReactNativePageView.m; sourceTree = "<group>"; };
+		46EB2E00006130 /* ReactViewPagerManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ReactViewPagerManager.h; path = ios/ReactViewPagerManager.h; sourceTree = "<group>"; };
+		46EB2E00006140 /* ReactViewPagerManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = ReactViewPagerManager.m; path = ios/ReactViewPagerManager.m; sourceTree = "<group>"; };
+		46EB2E00006150 /* UIViewController+CreateExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+CreateExtension.h"; path = "ios/UIViewController+CreateExtension.h"; sourceTree = "<group>"; };
+		46EB2E00006160 /* UIViewController+CreateExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+CreateExtension.m"; path = "ios/UIViewController+CreateExtension.m"; sourceTree = "<group>"; };
+		46EB2E00006170 /* RNCSafeAreaContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaContext.h; path = ios/RNCSafeAreaContext.h; sourceTree = "<group>"; };
+		46EB2E00006180 /* RNCSafeAreaContext.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = RNCSafeAreaContext.mm; path = ios/RNCSafeAreaContext.mm; sourceTree = "<group>"; };
+		46EB2E00006190 /* RNCSafeAreaProvider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaProvider.h; path = ios/RNCSafeAreaProvider.h; sourceTree = "<group>"; };
+		46EB2E000061A0 /* RNCSafeAreaProvider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaProvider.m; path = ios/RNCSafeAreaProvider.m; sourceTree = "<group>"; };
+		46EB2E000061B0 /* RNCSafeAreaProviderManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaProviderManager.h; path = ios/RNCSafeAreaProviderManager.h; sourceTree = "<group>"; };
+		46EB2E000061C0 /* RNCSafeAreaProviderManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaProviderManager.m; path = ios/RNCSafeAreaProviderManager.m; sourceTree = "<group>"; };
+		46EB2E000061D0 /* RNCSafeAreaShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaShadowView.h; path = ios/RNCSafeAreaShadowView.h; sourceTree = "<group>"; };
+		46EB2E000061E0 /* RNCSafeAreaShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaShadowView.m; path = ios/RNCSafeAreaShadowView.m; sourceTree = "<group>"; };
+		46EB2E000061F0 /* RNCSafeAreaUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaUtils.h; path = ios/RNCSafeAreaUtils.h; sourceTree = "<group>"; };
+		46EB2E00006200 /* RNCSafeAreaUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaUtils.m; path = ios/RNCSafeAreaUtils.m; sourceTree = "<group>"; };
+		46EB2E00006210 /* RNCSafeAreaView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaView.h; path = ios/RNCSafeAreaView.h; sourceTree = "<group>"; };
+		46EB2E00006220 /* RNCSafeAreaView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaView.m; path = ios/RNCSafeAreaView.m; sourceTree = "<group>"; };
+		46EB2E00006230 /* RNCSafeAreaViewEdges.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewEdges.h; path = ios/RNCSafeAreaViewEdges.h; sourceTree = "<group>"; };
+		46EB2E00006240 /* RNCSafeAreaViewEdges.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewEdges.m; path = ios/RNCSafeAreaViewEdges.m; sourceTree = "<group>"; };
+		46EB2E00006250 /* RNCSafeAreaViewLocalData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewLocalData.h; path = ios/RNCSafeAreaViewLocalData.h; sourceTree = "<group>"; };
+		46EB2E00006260 /* RNCSafeAreaViewLocalData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewLocalData.m; path = ios/RNCSafeAreaViewLocalData.m; sourceTree = "<group>"; };
+		46EB2E00006270 /* RNCSafeAreaViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewManager.h; path = ios/RNCSafeAreaViewManager.h; sourceTree = "<group>"; };
+		46EB2E00006280 /* RNCSafeAreaViewManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewManager.m; path = ios/RNCSafeAreaViewManager.m; sourceTree = "<group>"; };
+		46EB2E00006290 /* RNCSafeAreaViewMode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCSafeAreaViewMode.h; path = ios/RNCSafeAreaViewMode.h; sourceTree = "<group>"; };
+		46EB2E000062A0 /* RNCSafeAreaViewMode.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCSafeAreaViewMode.m; path = ios/RNCSafeAreaViewMode.m; sourceTree = "<group>"; };
 		46EB2E000062B0 /* RNCWebView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCWebView.h; path = apple/RNCWebView.h; sourceTree = "<group>"; };
 		46EB2E000062C0 /* RNCWebView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = RNCWebView.m; path = apple/RNCWebView.m; sourceTree = "<group>"; };
 		46EB2E000062D0 /* RNCWebViewManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = RNCWebViewManager.h; path = apple/RNCWebViewManager.h; sourceTree = "<group>"; };
@@ -5115,10 +5116,10 @@
 		46EB2E000067D0 /* kakao-login.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "kakao-login.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E000067F0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		46EB2E00006800 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00006810 /* react-native-safe-area-context.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-safe-area-context.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00006810 /* react-native-pager-view.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-pager-view.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00006830 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		46EB2E00006840 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		46EB2E00006850 /* react-native-viewpager.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-viewpager.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		46EB2E00006850 /* react-native-safe-area-context.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-safe-area-context.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		46EB2E00006870 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		46EB2E00006880 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		46EB2E00006890 /* react-native-webview.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "react-native-webview.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -5321,14 +5322,14 @@
 		46EB2E0000EA80 /* kakao-login-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kakao-login-umbrella.h"; sourceTree = "<group>"; };
 		46EB2E0000EAB0 /* kakao-login-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "kakao-login-prefix.pch"; sourceTree = "<group>"; };
 		46EB2E0000EAC0 /* kakao-login-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "kakao-login-dummy.m"; sourceTree = "<group>"; };
-		46EB2E0000ECB0 /* react-native-safe-area-context.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-safe-area-context.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E0000ECC0 /* react-native-safe-area-context.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-safe-area-context.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E0000ECD0 /* react-native-safe-area-context-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-safe-area-context-prefix.pch"; sourceTree = "<group>"; };
-		46EB2E0000ECE0 /* react-native-safe-area-context-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-safe-area-context-dummy.m"; sourceTree = "<group>"; };
-		46EB2E0000EE90 /* react-native-viewpager.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-viewpager.debug.xcconfig"; sourceTree = "<group>"; };
-		46EB2E0000EEA0 /* react-native-viewpager.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-viewpager.release.xcconfig"; sourceTree = "<group>"; };
-		46EB2E0000EEB0 /* react-native-viewpager-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-viewpager-prefix.pch"; sourceTree = "<group>"; };
-		46EB2E0000EEC0 /* react-native-viewpager-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-viewpager-dummy.m"; sourceTree = "<group>"; };
+		46EB2E0000EC70 /* react-native-pager-view.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-pager-view.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E0000EC80 /* react-native-pager-view.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-pager-view.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E0000EC90 /* react-native-pager-view-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-pager-view-prefix.pch"; sourceTree = "<group>"; };
+		46EB2E0000ECA0 /* react-native-pager-view-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-pager-view-dummy.m"; sourceTree = "<group>"; };
+		46EB2E0000EE90 /* react-native-safe-area-context.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-safe-area-context.debug.xcconfig"; sourceTree = "<group>"; };
+		46EB2E0000EEA0 /* react-native-safe-area-context.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-safe-area-context.release.xcconfig"; sourceTree = "<group>"; };
+		46EB2E0000EEB0 /* react-native-safe-area-context-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-safe-area-context-prefix.pch"; sourceTree = "<group>"; };
+		46EB2E0000EEC0 /* react-native-safe-area-context-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "react-native-safe-area-context-dummy.m"; sourceTree = "<group>"; };
 		46EB2E0000EFD0 /* react-native-webview.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-webview.debug.xcconfig"; sourceTree = "<group>"; };
 		46EB2E0000EFE0 /* react-native-webview.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "react-native-webview.release.xcconfig"; sourceTree = "<group>"; };
 		46EB2E0000EFF0 /* react-native-webview-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "react-native-webview-prefix.pch"; sourceTree = "<group>"; };
@@ -5376,7 +5377,6 @@
 		C777CF2FB1E39A45CBBDB54E8693F471 /* RNReanimated */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = RNReanimated; path = libRNReanimated.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C775614AC76D44CECB6BE08B022F1F /* ReactCommon */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = ReactCommon; path = libReactCommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9F334F2E90E3EE462FC4192AF5C03BD /* React-jsi */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-jsi"; path = "libReact-jsi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E5F9D2F97C3F55CA9A6540B426B0E644 /* react-native-viewpager */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "react-native-viewpager"; path = "libreact-native-viewpager.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E6A16705C69FC7DE11C2469A4A0F8358 /* React-RCTText */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-RCTText"; path = "libReact-RCTText.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7178FECB829C9576A3723658B07F087 /* React-Codegen */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-Codegen"; path = "libReact-Codegen.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDBF403E8E0B3885E65C2741B536BC5 /* React-RCTImage */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "React-RCTImage"; path = "libReact-RCTImage.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -5676,7 +5676,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E0000ED70 /* Frameworks */ = {
+		46EB2E0000ED30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -5748,8 +5748,8 @@
 				F2E7C88DFCD460A4B46B913ADEB8A641 /* React-jsiexecutor */,
 				2577F299FCB0A19824FE989BE77B8E8F /* React-jsinspector */,
 				A5B49761F8D1EB12585DD45CAA2E489F /* React-logger */,
+				33B49C6613B0AA0291A359688E245886 /* react-native-pager-view */,
 				52FCF98CEFF94C742080B6965D537AD0 /* react-native-safe-area-context */,
-				E5F9D2F97C3F55CA9A6540B426B0E644 /* react-native-viewpager */,
 				8DF63376066E2275FF26820B3A512A9B /* react-native-webview */,
 				666E72807891C591E025A75410CD2A26 /* React-perflogger */,
 				FE7B9294FF05AAFD1653E2104E10844A /* React-RCTAnimation */,
@@ -5827,8 +5827,8 @@
 				46EB2E00000300 /* React-jsiexecutor */,
 				46EB2E00000310 /* React-jsinspector */,
 				46EB2E00000320 /* React-logger */,
-				46EB2E000003B0 /* react-native-safe-area-context */,
-				46EB2E000003C0 /* react-native-viewpager */,
+				46EB2E000003B0 /* react-native-pager-view */,
+				46EB2E000003C0 /* react-native-safe-area-context */,
 				46EB2E000003D0 /* react-native-webview */,
 				46EB2E00000330 /* React-perflogger */,
 				46EB2E00000240 /* React-RCTActionSheet */,
@@ -6976,60 +6976,60 @@
 			path = "../../node_modules/@react-native-seoul/kakao-login";
 			sourceTree = "<group>";
 		};
-		46EB2E000003B0 /* react-native-safe-area-context */ = {
+		46EB2E000003B0 /* react-native-pager-view */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E00006070 /* RNCSafeAreaContext.h */,
-				46EB2E00006080 /* RNCSafeAreaContext.mm */,
-				46EB2E00006090 /* RNCSafeAreaProvider.h */,
-				46EB2E000060A0 /* RNCSafeAreaProvider.m */,
-				46EB2E000060B0 /* RNCSafeAreaProviderManager.h */,
-				46EB2E000060C0 /* RNCSafeAreaProviderManager.m */,
-				46EB2E000060D0 /* RNCSafeAreaShadowView.h */,
-				46EB2E000060E0 /* RNCSafeAreaShadowView.m */,
-				46EB2E000060F0 /* RNCSafeAreaUtils.h */,
-				46EB2E00006100 /* RNCSafeAreaUtils.m */,
-				46EB2E00006110 /* RNCSafeAreaView.h */,
-				46EB2E00006120 /* RNCSafeAreaView.m */,
-				46EB2E00006130 /* RNCSafeAreaViewEdges.h */,
-				46EB2E00006140 /* RNCSafeAreaViewEdges.m */,
-				46EB2E00006150 /* RNCSafeAreaViewLocalData.h */,
-				46EB2E00006160 /* RNCSafeAreaViewLocalData.m */,
-				46EB2E00006170 /* RNCSafeAreaViewManager.h */,
-				46EB2E00006180 /* RNCSafeAreaViewManager.m */,
-				46EB2E00006190 /* RNCSafeAreaViewMode.h */,
-				46EB2E000061A0 /* RNCSafeAreaViewMode.m */,
+				46EB2E00006070 /* RCTConvert+UIPageViewControllerNavigationOrientation.h */,
+				46EB2E00006080 /* RCTConvert+UIPageViewControllerNavigationOrientation.m */,
+				46EB2E00006090 /* RCTConvert+UIPageViewControllerTransitionStyle.h */,
+				46EB2E000060A0 /* RCTConvert+UIPageViewControllerTransitionStyle.m */,
+				46EB2E000060B0 /* RCTOnPageScrollEvent.h */,
+				46EB2E000060C0 /* RCTOnPageScrollEvent.m */,
+				46EB2E000060D0 /* RCTOnPageScrollStateChanged.h */,
+				46EB2E000060E0 /* RCTOnPageScrollStateChanged.m */,
+				46EB2E000060F0 /* RCTOnPageSelected.h */,
+				46EB2E00006100 /* RCTOnPageSelected.m */,
+				46EB2E00006110 /* ReactNativePageView.h */,
+				46EB2E00006120 /* ReactNativePageView.m */,
+				46EB2E00006130 /* ReactViewPagerManager.h */,
+				46EB2E00006140 /* ReactViewPagerManager.m */,
+				46EB2E00006150 /* UIViewController+CreateExtension.h */,
+				46EB2E00006160 /* UIViewController+CreateExtension.m */,
 				46EB2E000067E0 /* Pod */,
-				46EB2E0000ECA0 /* Support Files */,
+				46EB2E0000EC60 /* Support Files */,
 			);
-			name = "react-native-safe-area-context";
-			path = "../../node_modules/react-native-safe-area-context";
+			name = "react-native-pager-view";
+			path = "../../node_modules/react-native-pager-view";
 			sourceTree = "<group>";
 		};
-		46EB2E000003C0 /* react-native-viewpager */ = {
+		46EB2E000003C0 /* react-native-safe-area-context */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E000061B0 /* RCTConvert+UIPageViewControllerNavigationOrientation.h */,
-				46EB2E000061C0 /* RCTConvert+UIPageViewControllerNavigationOrientation.m */,
-				46EB2E000061D0 /* RCTConvert+UIPageViewControllerTransitionStyle.h */,
-				46EB2E000061E0 /* RCTConvert+UIPageViewControllerTransitionStyle.m */,
-				46EB2E000061F0 /* RCTOnPageScrollEvent.h */,
-				46EB2E00006200 /* RCTOnPageScrollEvent.m */,
-				46EB2E00006210 /* RCTOnPageScrollStateChanged.h */,
-				46EB2E00006220 /* RCTOnPageScrollStateChanged.m */,
-				46EB2E00006230 /* RCTOnPageSelected.h */,
-				46EB2E00006240 /* RCTOnPageSelected.m */,
-				46EB2E00006250 /* ReactNativePageView.h */,
-				46EB2E00006260 /* ReactNativePageView.m */,
-				46EB2E00006270 /* ReactViewPagerManager.h */,
-				46EB2E00006280 /* ReactViewPagerManager.m */,
-				46EB2E00006290 /* UIViewController+CreateExtension.h */,
-				46EB2E000062A0 /* UIViewController+CreateExtension.m */,
+				46EB2E00006170 /* RNCSafeAreaContext.h */,
+				46EB2E00006180 /* RNCSafeAreaContext.mm */,
+				46EB2E00006190 /* RNCSafeAreaProvider.h */,
+				46EB2E000061A0 /* RNCSafeAreaProvider.m */,
+				46EB2E000061B0 /* RNCSafeAreaProviderManager.h */,
+				46EB2E000061C0 /* RNCSafeAreaProviderManager.m */,
+				46EB2E000061D0 /* RNCSafeAreaShadowView.h */,
+				46EB2E000061E0 /* RNCSafeAreaShadowView.m */,
+				46EB2E000061F0 /* RNCSafeAreaUtils.h */,
+				46EB2E00006200 /* RNCSafeAreaUtils.m */,
+				46EB2E00006210 /* RNCSafeAreaView.h */,
+				46EB2E00006220 /* RNCSafeAreaView.m */,
+				46EB2E00006230 /* RNCSafeAreaViewEdges.h */,
+				46EB2E00006240 /* RNCSafeAreaViewEdges.m */,
+				46EB2E00006250 /* RNCSafeAreaViewLocalData.h */,
+				46EB2E00006260 /* RNCSafeAreaViewLocalData.m */,
+				46EB2E00006270 /* RNCSafeAreaViewManager.h */,
+				46EB2E00006280 /* RNCSafeAreaViewManager.m */,
+				46EB2E00006290 /* RNCSafeAreaViewMode.h */,
+				46EB2E000062A0 /* RNCSafeAreaViewMode.m */,
 				46EB2E00006820 /* Pod */,
 				46EB2E0000EE80 /* Support Files */,
 			);
-			name = "react-native-viewpager";
-			path = "../../node_modules/@react-native-community/viewpager";
+			name = "react-native-safe-area-context";
+			path = "../../node_modules/react-native-safe-area-context";
 			sourceTree = "<group>";
 		};
 		46EB2E000003D0 /* react-native-webview */ = {
@@ -8829,7 +8829,7 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E000067F0 /* LICENSE */,
-				46EB2E00006810 /* react-native-safe-area-context.podspec */,
+				46EB2E00006810 /* react-native-pager-view.podspec */,
 				46EB2E00006800 /* README.md */,
 			);
 			name = Pod;
@@ -8839,7 +8839,7 @@
 			isa = PBXGroup;
 			children = (
 				46EB2E00006830 /* LICENSE */,
-				46EB2E00006850 /* react-native-viewpager.podspec */,
+				46EB2E00006850 /* react-native-safe-area-context.podspec */,
 				46EB2E00006840 /* README.md */,
 			);
 			name = Pod;
@@ -9438,28 +9438,28 @@
 			path = "../../../ios/Pods/Target Support Files/kakao-login";
 			sourceTree = "<group>";
 		};
-		46EB2E0000ECA0 /* Support Files */ = {
+		46EB2E0000EC60 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E0000ECE0 /* react-native-safe-area-context-dummy.m */,
-				46EB2E0000ECD0 /* react-native-safe-area-context-prefix.pch */,
-				46EB2E0000ECB0 /* react-native-safe-area-context.debug.xcconfig */,
-				46EB2E0000ECC0 /* react-native-safe-area-context.release.xcconfig */,
+				46EB2E0000ECA0 /* react-native-pager-view-dummy.m */,
+				46EB2E0000EC90 /* react-native-pager-view-prefix.pch */,
+				46EB2E0000EC70 /* react-native-pager-view.debug.xcconfig */,
+				46EB2E0000EC80 /* react-native-pager-view.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../../ios/Pods/Target Support Files/react-native-safe-area-context";
+			path = "../../ios/Pods/Target Support Files/react-native-pager-view";
 			sourceTree = "<group>";
 		};
 		46EB2E0000EE80 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				46EB2E0000EEC0 /* react-native-viewpager-dummy.m */,
-				46EB2E0000EEB0 /* react-native-viewpager-prefix.pch */,
-				46EB2E0000EE90 /* react-native-viewpager.debug.xcconfig */,
-				46EB2E0000EEA0 /* react-native-viewpager.release.xcconfig */,
+				46EB2E0000EEC0 /* react-native-safe-area-context-dummy.m */,
+				46EB2E0000EEB0 /* react-native-safe-area-context-prefix.pch */,
+				46EB2E0000EE90 /* react-native-safe-area-context.debug.xcconfig */,
+				46EB2E0000EEA0 /* react-native-safe-area-context.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "../../../ios/Pods/Target Support Files/react-native-viewpager";
+			path = "../../ios/Pods/Target Support Files/react-native-safe-area-context";
 			sourceTree = "<group>";
 		};
 		46EB2E0000EFC0 /* Support Files */ = {
@@ -10652,31 +10652,31 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E0000EC00 /* RNCSafeAreaContext.h in Headers */,
-				46EB2E0000EC10 /* RNCSafeAreaProvider.h in Headers */,
-				46EB2E0000EC20 /* RNCSafeAreaProviderManager.h in Headers */,
-				46EB2E0000EC30 /* RNCSafeAreaShadowView.h in Headers */,
-				46EB2E0000EC40 /* RNCSafeAreaUtils.h in Headers */,
-				46EB2E0000EC50 /* RNCSafeAreaView.h in Headers */,
-				46EB2E0000EC60 /* RNCSafeAreaViewEdges.h in Headers */,
-				46EB2E0000EC70 /* RNCSafeAreaViewLocalData.h in Headers */,
-				46EB2E0000EC80 /* RNCSafeAreaViewManager.h in Headers */,
-				46EB2E0000EC90 /* RNCSafeAreaViewMode.h in Headers */,
+				46EB2E0000EBE0 /* RCTConvert+UIPageViewControllerNavigationOrientation.h in Headers */,
+				46EB2E0000EBF0 /* RCTConvert+UIPageViewControllerTransitionStyle.h in Headers */,
+				46EB2E0000EC00 /* RCTOnPageScrollEvent.h in Headers */,
+				46EB2E0000EC10 /* RCTOnPageScrollStateChanged.h in Headers */,
+				46EB2E0000EC20 /* RCTOnPageSelected.h in Headers */,
+				46EB2E0000EC30 /* ReactNativePageView.h in Headers */,
+				46EB2E0000EC40 /* ReactViewPagerManager.h in Headers */,
+				46EB2E0000EC50 /* UIViewController+CreateExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E0000ED50 /* Headers */ = {
+		46EB2E0000ED10 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E0000EE00 /* RCTConvert+UIPageViewControllerNavigationOrientation.h in Headers */,
-				46EB2E0000EE10 /* RCTConvert+UIPageViewControllerTransitionStyle.h in Headers */,
-				46EB2E0000EE20 /* RCTOnPageScrollEvent.h in Headers */,
-				46EB2E0000EE30 /* RCTOnPageScrollStateChanged.h in Headers */,
-				46EB2E0000EE40 /* RCTOnPageSelected.h in Headers */,
-				46EB2E0000EE50 /* ReactNativePageView.h in Headers */,
-				46EB2E0000EE60 /* ReactViewPagerManager.h in Headers */,
-				46EB2E0000EE70 /* UIViewController+CreateExtension.h in Headers */,
+				46EB2E0000EDE0 /* RNCSafeAreaContext.h in Headers */,
+				46EB2E0000EDF0 /* RNCSafeAreaProvider.h in Headers */,
+				46EB2E0000EE00 /* RNCSafeAreaProviderManager.h in Headers */,
+				46EB2E0000EE10 /* RNCSafeAreaShadowView.h in Headers */,
+				46EB2E0000EE20 /* RNCSafeAreaUtils.h in Headers */,
+				46EB2E0000EE30 /* RNCSafeAreaView.h in Headers */,
+				46EB2E0000EE40 /* RNCSafeAreaViewEdges.h in Headers */,
+				46EB2E0000EE50 /* RNCSafeAreaViewLocalData.h in Headers */,
+				46EB2E0000EE60 /* RNCSafeAreaViewManager.h in Headers */,
+				46EB2E0000EE70 /* RNCSafeAreaViewMode.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -10814,6 +10814,24 @@
 			name = Yoga;
 			productName = Yoga;
 			productReference = 65D0A19C165FA1126B1360680FE6DB12 /* Yoga */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3A66A1242079D78DB9AE8A5F6D0586F3 /* react-native-pager-view */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46EB2E0000EAF0 /* Build configuration list for PBXNativeTarget "react-native-pager-view" */;
+			buildPhases = (
+				46EB2E0000EB30 /* Headers */,
+				46EB2E0000EB40 /* Sources */,
+				46EB2E0000EB50 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				46EB2E00011520 /* PBXTargetDependency */,
+			);
+			name = "react-native-pager-view";
+			productName = "react-native-pager-view";
+			productReference = 33B49C6613B0AA0291A359688E245886 /* react-native-pager-view */;
 			productType = "com.apple.product-type.library.static";
 		};
 		3F7BF367078951B6E8BC95B3DA89967A /* KakaoSDKUser */ = {
@@ -11408,20 +11426,20 @@
 		};
 		BD9A27D8398DEB3205D3F8937B0672A0 /* react-native-safe-area-context */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E0000EAF0 /* Build configuration list for PBXNativeTarget "react-native-safe-area-context" */;
+			buildConfigurationList = 46EB2E0000ECD0 /* Build configuration list for PBXNativeTarget "react-native-safe-area-context" */;
 			buildPhases = (
-				46EB2E0000EB30 /* Headers */,
-				46EB2E0000EB40 /* Sources */,
-				46EB2E0000EB50 /* Frameworks */,
+				46EB2E0000ED10 /* Headers */,
+				46EB2E0000ED20 /* Sources */,
+				46EB2E0000ED30 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				46EB2E00011540 /* PBXTargetDependency */,
 				46EB2E00011560 /* PBXTargetDependency */,
 				46EB2E00011580 /* PBXTargetDependency */,
-				46EB2E00011520 /* PBXTargetDependency */,
 				46EB2E000115A0 /* PBXTargetDependency */,
+				46EB2E00011540 /* PBXTargetDependency */,
+				46EB2E000115C0 /* PBXTargetDependency */,
 			);
 			name = "react-native-safe-area-context";
 			productName = "react-native-safe-area-context";
@@ -11608,24 +11626,6 @@
 			productReference = 1936453FF2A7E3A13063C4917C4D5598 /* RCT-Folly */;
 			productType = "com.apple.product-type.library.static";
 		};
-		F1401264B2796C32CF72C6C2CB10D487 /* react-native-viewpager */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 46EB2E0000ED10 /* Build configuration list for PBXNativeTarget "react-native-viewpager" */;
-			buildPhases = (
-				46EB2E0000ED50 /* Headers */,
-				46EB2E0000ED60 /* Sources */,
-				46EB2E0000ED70 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				46EB2E000115C0 /* PBXTargetDependency */,
-			);
-			name = "react-native-viewpager";
-			productName = "react-native-viewpager";
-			productReference = E5F9D2F97C3F55CA9A6540B426B0E644 /* react-native-viewpager */;
-			productType = "com.apple.product-type.library.static";
-		};
 		F1A7357D2A67F44CF3FBB03F86D5EE1A /* KakaoSDKTemplate */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46EB2E00007940 /* Build configuration list for PBXNativeTarget "KakaoSDKTemplate" */;
@@ -11796,8 +11796,8 @@
 				DA0709CAAD589C6E7963495210438021 /* React-jsiexecutor */,
 				F7D033C4C128EECAA020990641FA985F /* React-jsinspector */,
 				083B602EA19B4AD50EC53C0602F29A7D /* React-logger */,
+				3A66A1242079D78DB9AE8A5F6D0586F3 /* react-native-pager-view */,
 				BD9A27D8398DEB3205D3F8937B0672A0 /* react-native-safe-area-context */,
-				F1401264B2796C32CF72C6C2CB10D487 /* react-native-viewpager */,
 				8D18C49071FC5370C25F5758A85BA5F6 /* react-native-webview */,
 				F1E2583679398CB5F4D2B3272E9B198F /* React-perflogger */,
 				11989A5E568B3B69655EE0C13DCDA3F9 /* React-RCTActionSheet */,
@@ -13048,33 +13048,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E0000ECF0 /* react-native-safe-area-context-dummy.m in Sources */,
-				46EB2E0000EB60 /* RNCSafeAreaContext.mm in Sources */,
-				46EB2E0000EB70 /* RNCSafeAreaProvider.m in Sources */,
-				46EB2E0000EB80 /* RNCSafeAreaProviderManager.m in Sources */,
-				46EB2E0000EB90 /* RNCSafeAreaShadowView.m in Sources */,
-				46EB2E0000EBA0 /* RNCSafeAreaUtils.m in Sources */,
-				46EB2E0000EBB0 /* RNCSafeAreaView.m in Sources */,
-				46EB2E0000EBC0 /* RNCSafeAreaViewEdges.m in Sources */,
-				46EB2E0000EBD0 /* RNCSafeAreaViewLocalData.m in Sources */,
-				46EB2E0000EBE0 /* RNCSafeAreaViewManager.m in Sources */,
-				46EB2E0000EBF0 /* RNCSafeAreaViewMode.m in Sources */,
+				46EB2E0000EB60 /* RCTConvert+UIPageViewControllerNavigationOrientation.m in Sources */,
+				46EB2E0000EB70 /* RCTConvert+UIPageViewControllerTransitionStyle.m in Sources */,
+				46EB2E0000EB80 /* RCTOnPageScrollEvent.m in Sources */,
+				46EB2E0000EB90 /* RCTOnPageScrollStateChanged.m in Sources */,
+				46EB2E0000EBA0 /* RCTOnPageSelected.m in Sources */,
+				46EB2E0000ECB0 /* react-native-pager-view-dummy.m in Sources */,
+				46EB2E0000EBB0 /* ReactNativePageView.m in Sources */,
+				46EB2E0000EBC0 /* ReactViewPagerManager.m in Sources */,
+				46EB2E0000EBD0 /* UIViewController+CreateExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		46EB2E0000ED60 /* Sources */ = {
+		46EB2E0000ED20 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				46EB2E0000ED80 /* RCTConvert+UIPageViewControllerNavigationOrientation.m in Sources */,
-				46EB2E0000ED90 /* RCTConvert+UIPageViewControllerTransitionStyle.m in Sources */,
-				46EB2E0000EDA0 /* RCTOnPageScrollEvent.m in Sources */,
-				46EB2E0000EDB0 /* RCTOnPageScrollStateChanged.m in Sources */,
-				46EB2E0000EDC0 /* RCTOnPageSelected.m in Sources */,
-				46EB2E0000EED0 /* react-native-viewpager-dummy.m in Sources */,
-				46EB2E0000EDD0 /* ReactNativePageView.m in Sources */,
-				46EB2E0000EDE0 /* ReactViewPagerManager.m in Sources */,
-				46EB2E0000EDF0 /* UIViewController+CreateExtension.m in Sources */,
+				46EB2E0000EED0 /* react-native-safe-area-context-dummy.m in Sources */,
+				46EB2E0000ED40 /* RNCSafeAreaContext.mm in Sources */,
+				46EB2E0000ED50 /* RNCSafeAreaProvider.m in Sources */,
+				46EB2E0000ED60 /* RNCSafeAreaProviderManager.m in Sources */,
+				46EB2E0000ED70 /* RNCSafeAreaShadowView.m in Sources */,
+				46EB2E0000ED80 /* RNCSafeAreaUtils.m in Sources */,
+				46EB2E0000ED90 /* RNCSafeAreaView.m in Sources */,
+				46EB2E0000EDA0 /* RNCSafeAreaViewEdges.m in Sources */,
+				46EB2E0000EDB0 /* RNCSafeAreaViewLocalData.m in Sources */,
+				46EB2E0000EDC0 /* RNCSafeAreaViewManager.m in Sources */,
+				46EB2E0000EDD0 /* RNCSafeAreaViewMode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -13398,14 +13398,14 @@
 		};
 		46EB2E0000F8A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-safe-area-context";
-			target = BD9A27D8398DEB3205D3F8937B0672A0 /* react-native-safe-area-context */;
+			name = "react-native-pager-view";
+			target = 3A66A1242079D78DB9AE8A5F6D0586F3 /* react-native-pager-view */;
 			targetProxy = 46EB2E0000F890 /* PBXContainerItemProxy */;
 		};
 		46EB2E0000F8C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-viewpager";
-			target = F1401264B2796C32CF72C6C2CB10D487 /* react-native-viewpager */;
+			name = "react-native-safe-area-context";
+			target = BD9A27D8398DEB3205D3F8937B0672A0 /* react-native-safe-area-context */;
 			targetProxy = 46EB2E0000F8B0 /* PBXContainerItemProxy */;
 		};
 		46EB2E0000F8E0 /* PBXTargetDependency */ = {
@@ -13704,14 +13704,14 @@
 		};
 		46EB2E0000FF00 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-safe-area-context";
-			target = BD9A27D8398DEB3205D3F8937B0672A0 /* react-native-safe-area-context */;
+			name = "react-native-pager-view";
+			target = 3A66A1242079D78DB9AE8A5F6D0586F3 /* react-native-pager-view */;
 			targetProxy = 46EB2E0000FEF0 /* PBXContainerItemProxy */;
 		};
 		46EB2E0000FF20 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "react-native-viewpager";
-			target = F1401264B2796C32CF72C6C2CB10D487 /* react-native-viewpager */;
+			name = "react-native-safe-area-context";
+			target = BD9A27D8398DEB3205D3F8937B0672A0 /* react-native-safe-area-context */;
 			targetProxy = 46EB2E0000FF10 /* PBXContainerItemProxy */;
 		};
 		46EB2E0000FF40 /* PBXTargetDependency */ = {
@@ -14766,38 +14766,38 @@
 		};
 		46EB2E00011520 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = React;
-			target = 1BEE828C124E6416179B904A9F66D794 /* React */;
+			name = "React-Core";
+			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
 			targetProxy = 46EB2E00011510 /* PBXContainerItemProxy */;
 		};
 		46EB2E00011540 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "RCT-Folly";
-			target = EC55D52694092A9D0E6A78EB01207EB5 /* RCT-Folly */;
+			name = React;
+			target = 1BEE828C124E6416179B904A9F66D794 /* React */;
 			targetProxy = 46EB2E00011530 /* PBXContainerItemProxy */;
 		};
 		46EB2E00011560 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RCTRequired;
-			target = E7E7CE52C8C68B17224FF8C262D80ABF /* RCTRequired */;
+			name = "RCT-Folly";
+			target = EC55D52694092A9D0E6A78EB01207EB5 /* RCT-Folly */;
 			targetProxy = 46EB2E00011550 /* PBXContainerItemProxy */;
 		};
 		46EB2E00011580 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = RCTTypeSafety;
-			target = D20469A9A1E5CFB26045EAEBE3F88E5E /* RCTTypeSafety */;
+			name = RCTRequired;
+			target = E7E7CE52C8C68B17224FF8C262D80ABF /* RCTRequired */;
 			targetProxy = 46EB2E00011570 /* PBXContainerItemProxy */;
 		};
 		46EB2E000115A0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = ReactCommon;
-			target = B6D5DD49633DFF0657B8C3F08EB3ABA9 /* ReactCommon */;
+			name = RCTTypeSafety;
+			target = D20469A9A1E5CFB26045EAEBE3F88E5E /* RCTTypeSafety */;
 			targetProxy = 46EB2E00011590 /* PBXContainerItemProxy */;
 		};
 		46EB2E000115C0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "React-Core";
-			target = 7ACAA9BE580DD31A5CB9D97C45D9492D /* React-Core */;
+			name = ReactCommon;
+			target = B6D5DD49633DFF0657B8C3F08EB3ABA9 /* ReactCommon */;
 			targetProxy = 46EB2E000115B0 /* PBXContainerItemProxy */;
 		};
 		46EB2E000115E0 /* PBXTargetDependency */ = {
@@ -17213,19 +17213,19 @@
 		};
 		46EB2E0000EB00 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E0000ECC0 /* react-native-safe-area-context.release.xcconfig */;
+			baseConfigurationReference = 46EB2E0000EC80 /* react-native-pager-view.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-safe-area-context/react-native-safe-area-context-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-pager-view/react-native-pager-view-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = react_native_safe_area_context;
-				PRODUCT_NAME = "react-native-safe-area-context";
+				PRODUCT_MODULE_NAME = react_native_pager_view;
+				PRODUCT_NAME = "react-native-pager-view";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -17238,7 +17238,31 @@
 		};
 		46EB2E0000EB10 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E0000ECB0 /* react-native-safe-area-context.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E0000EC70 /* react-native-pager-view.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-pager-view/react-native-pager-view-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = react_native_pager_view;
+				PRODUCT_NAME = "react-native-pager-view";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		46EB2E0000ECE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 46EB2E0000EEA0 /* react-native-safe-area-context.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -17257,47 +17281,25 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		46EB2E0000ED20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E0000EEA0 /* react-native-viewpager.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-viewpager/react-native-viewpager-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = react_native_viewpager;
-				PRODUCT_NAME = "react-native-viewpager";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		46EB2E0000ED30 /* Debug */ = {
+		46EB2E0000ECF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46EB2E0000EE90 /* react-native-viewpager.debug.xcconfig */;
+			baseConfigurationReference = 46EB2E0000EE90 /* react-native-safe-area-context.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/react-native-viewpager/react-native-viewpager-prefix.pch";
+				GCC_PREFIX_HEADER = "Target Support Files/react-native-safe-area-context/react-native-safe-area-context-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_MODULE_NAME = react_native_viewpager;
-				PRODUCT_NAME = "react-native-viewpager";
+				PRODUCT_MODULE_NAME = react_native_safe_area_context;
+				PRODUCT_NAME = "react-native-safe-area-context";
 				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
@@ -17897,7 +17899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E0000EAF0 /* Build configuration list for PBXNativeTarget "react-native-safe-area-context" */ = {
+		46EB2E0000EAF0 /* Build configuration list for PBXNativeTarget "react-native-pager-view" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46EB2E0000EB10 /* Debug */,
@@ -17906,11 +17908,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		46EB2E0000ED10 /* Build configuration list for PBXNativeTarget "react-native-viewpager" */ = {
+		46EB2E0000ECD0 /* Build configuration list for PBXNativeTarget "react-native-safe-area-context" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				46EB2E0000ED30 /* Debug */,
-				46EB2E0000ED20 /* Release */,
+				46EB2E0000ECF0 /* Debug */,
+				46EB2E0000ECE0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -1,18 +1,24 @@
 import React, { useState, useEffect } from "react";
 import styled from "styled-components/native";
 import axios from "axios";
-import { useAppSelector } from "../../../../store/hooks";
+import { useAppSelector } from "../../../hooks/index.hooks";
 import { Container, StoreName, StoreInfoText, StoreInfoTitle, StoreInfoWrap } from './StoreInfoTab.style'
 import StoreInfoEle from "../../../components/StoreInfoEle/StoreInfoEle.component";
 
 const StoreInfoTap = () => {
-  const curLargeCat = useAppSelector(
-    (state) => state.categoryReducer.curLargeCat
-  );
+  interface StoreInfo { 
+    store: string; 
+    call_number: string; 
+    prices: string; 
+    day_off: string; 
+    opening_hours: string; 
+  };
+
+  const curLargeCat = useAppSelector((state) => state.categoryReducer.curLargeCat);
   const curMidCat = useAppSelector((state) => state.categoryReducer.curMidCat);
   const curStore = useAppSelector((state) => state.curStateReducer.curStore);
-  const [storeInfo, setStoreInfo] = useState({});
-  const [initialRegion, setInitialRegion] = useState({});
+  const [storeInfo, setStoreInfo] = useState<StoreInfo>({});
+  // const [initialRegion, setInitialRegion] = useState({});
     useEffect(() => {
         axios
           .get(
