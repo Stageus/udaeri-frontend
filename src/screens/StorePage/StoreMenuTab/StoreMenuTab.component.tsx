@@ -13,7 +13,6 @@ const StoreMenuTab = ():JSX.Element => {
     const curLargeCat = useAppSelector((state) => state.categoryReducer.curLargeCat);
     const curMidCat = useAppSelector((state) => state.categoryReducer.curMidCat);
     const curStore = useAppSelector((state => state.curStateReducer.curStore));
-    console.log(curLargeCat, curMidCat, curStore);
     const [storeMenu, setStoreMenu] = useState([]);
     
     const getStore = async () => {
