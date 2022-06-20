@@ -13,12 +13,12 @@ import java.util.ArrayList;
 
 // @react-native-async-storage/async-storage
 import com.reactnativecommunity.asyncstorage.AsyncStoragePackage;
-// @react-native-community/viewpager
-import com.reactnativecommunity.viewpager.RNCViewPagerPackage;
 // @react-native-seoul/kakao-login
 import com.dooboolab.kakaologins.RNKakaoLoginsPackage;
 // react-native-gesture-handler
 import com.swmansion.gesturehandler.RNGestureHandlerPackage;
+// react-native-pager-view
+import com.reactnativepagerview.PagerViewPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -75,9 +75,9 @@ public class PackageList {
     return new ArrayList<>(Arrays.<ReactPackage>asList(
       new MainReactPackage(mConfig),
       new AsyncStoragePackage(),
-      new RNCViewPagerPackage(),
       new RNKakaoLoginsPackage(),
       new RNGestureHandlerPackage(),
+      new PagerViewPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),
