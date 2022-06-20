@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 import { Container, Header, MiddleBlock } from "./Home.style";
 import { LongBtn } from "../../components/longBtn/longBtn.component";
@@ -6,7 +6,7 @@ import { HomeJjimEle } from "../../components/home-jjimEle/home-jjimEle.componen
 import SafeAreaViewComp from "../../components/safeAreaViewComp/safeAreaViewComp";
 import { ScrollView } from "react-native-gesture-handler";
 import LargeCatEle from "../../components/LargeCatEle/LargeCatEle.component";
-
+import { useAppDispatch, useAppSelector } from "../../hooks/index.hooks";
 import {
   FoodIcon,
   SalonIcon,
@@ -17,6 +17,7 @@ import {
   ServiceIcon,
   PlayIcon,
 } from "../../assets/icon/icons";
+import { getLargeCategory } from "../../store/slice/categorySlice";
 
 const categoryList = [
   {
@@ -54,6 +55,15 @@ const categoryList = [
 ];
 
 const Home = (): JSX.Element => {
+  const dispatch = useAppDispatch();
+
+  useEffect(() => {
+    const fetchLargeCategory = async () => {
+      await dispatch(getLargeCategory());
+    };
+    fetchLargeCategory();
+  }, []);
+
   return (
     <SafeAreaViewComp>
       <ScrollView showsHorizontalScrollIndicator={false}>
