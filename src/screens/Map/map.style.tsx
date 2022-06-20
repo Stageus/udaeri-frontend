@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components/native";
 import theme from "../../style/theme";
+import { Animated } from "react-native";
 
 export const SearchInputTextContainer = styled.View`
   width: 100%;

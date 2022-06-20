@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import axios from "axios";
 import {
   SafeAreaView,
@@ -19,7 +19,7 @@ import {
 } from "./map.style";
 import { XIcon, BackIcon } from "../../assets/icon/icons";
 import theme from "../../style/theme";
-import { getLargeCategory } from "../../store/slice/categorySlice";
+import ToastMessage from "../../components/ToastMessage/ToastMessage.component";
 
 interface SearchResultType {
   favorited_count: number;
@@ -53,6 +53,7 @@ const Map = (): JSX.Element => {
   >([]);
 
   const [handlePin, setHandlePin] = useState<boolean>(false);
+  const [toastState, setToastState] = useState<boolean>(false);
 
   const initialCoord = { latitude: 37.452, longitude: 126.6575 };
 
@@ -76,8 +77,13 @@ const Map = (): JSX.Element => {
       setIsCategoryClicked(false);
       setClickedLargeCategory("");
       const res = await axios.post("search/stores/1", { text: word });
-      setSearchResultList(res.data);
-      console.log("결과", res.data);
+
+      if (res.data.length !== 0) {
+        setSearchResultList(res.data);
+      } else {
+        setToastState(true);
+        setTimeout(() => setToastState(false), 2000);
+      }
     } catch (err) {
       console.log("검색결과 못 가져옴", err);
     }
@@ -192,6 +198,9 @@ const Map = (): JSX.Element => {
           );
         })}
       </LargeCategoryContainer>
+
+      {toastState && <ToastMessage />}
+
       <NaverMapView
         style={{ width: "100%", height: "100%" }}
         showsMyLocationButton={true}
