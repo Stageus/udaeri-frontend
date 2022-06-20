@@ -30,20 +30,31 @@ interface SearchResultType {
   store_name: string;
 }
 
+interface LargeCategoryShopsType {
+  latitude: number;
+  longitude: number;
+  store_name: string;
+}
+
 const Map = (): JSX.Element => {
-  const dispatch = useAppDispatch();
   const navigation = useNavigation();
   const largeCategory = useAppSelector(
     (state) => state.categoryReducer.largeCatList
   );
-  const initialCoord = { latitude: 37.452, longitude: 126.6575 };
-
   const [searchWord, setSearchWord] = useState("");
   const [searchResultList, setSearchResultList] = useState<SearchResultType[]>(
     []
   );
   const [isSearching, setIsSearching] = useState<boolean>(false);
+  const [isCategoryClicked, setIsCategoryClicked] = useState<boolean>(false);
   const [clickedLargeCategory, setClickedLargeCategory] = useState("");
+  const [clickedLargeCategoryShops, setClickedLargeCategoryShops] = useState<
+    LargeCategoryShopsType[]
+  >([]);
+
+  const [handlePin, setHandlePin] = useState<boolean>(false);
+
+  const initialCoord = { latitude: 37.452, longitude: 126.6575 };
 
   // 검색창 focus
   const handleFocus = () => {
@@ -58,9 +69,12 @@ const Map = (): JSX.Element => {
   };
 
   // 검색어 submit
-  const handleSubmit = async (word) => {
+  const handleSubmit = async (word: string) => {
     try {
+      setHandlePin(true);
       setIsSearching(true);
+      setIsCategoryClicked(false);
+      setClickedLargeCategory("");
       const res = await axios.post("search/stores/1", { text: word });
       setSearchResultList(res.data);
       console.log("결과", res.data);
@@ -69,12 +83,67 @@ const Map = (): JSX.Element => {
     }
   };
 
-  // useEffect(() => {
-  //   const fetchLargeCategory = async () => {
-  //     await dispatch(getLargeCategory());
-  //   };
-  //   fetchLargeCategory();
-  // }, []);
+  // 대분류 클릭 시 가게 가져오기
+  const handleLargeCategory = async (categoryName: string) => {
+    setHandlePin(true);
+    setClickedLargeCategory(categoryName);
+    setSearchWord("");
+    setIsSearching(false);
+    setIsCategoryClicked(true);
+    try {
+      const res = await axios.get(
+        `/l-categories/${categoryName}/stores/location`
+      );
+      if (res.data.success) {
+        setClickedLargeCategoryShops(res.data.list);
+      } else {
+        console.log(res.data.success, "대분류 가게들 못 가져옴");
+      }
+    } catch (err) {
+      console.log("대분류 가게들 못 가져옴", err);
+    }
+  };
+
+  // 검색 & 대분류 클릭 시 핀 찍기
+  const ShopPins = () => {
+    return (
+      <>
+        {isSearching
+          ? searchResultList.length !== 0 &&
+            searchResultList.map((shop) => {
+              const coord = {
+                latitude: shop.latitude,
+                longitude: shop.longitude,
+              };
+
+              return (
+                <Marker
+                  coordinate={coord}
+                  width={30}
+                  height={40}
+                  caption={{ text: shop.store_name }}
+                />
+              );
+            })
+          : isCategoryClicked &&
+            clickedLargeCategoryShops.map((shop) => {
+              const coord = {
+                latitude: shop.latitude,
+                longitude: shop.longitude,
+              };
+
+              return (
+                <Marker
+                  coordinate={coord}
+                  width={30}
+                  height={40}
+                  caption={{ text: shop.store_name }}
+                />
+              );
+            })}
+      </>
+    );
+  };
 
   return (
     <SafeAreaView>
@@ -116,7 +185,7 @@ const Map = (): JSX.Element => {
               targetCategory={item.name}
               clickedCat={clickedLargeCategory}
             >
-              <Text onPress={() => setClickedLargeCategory(item.name)}>
+              <Text onPress={() => handleLargeCategory(item.name)}>
                 {item.name}
               </Text>
             </CategoryElement>
@@ -126,25 +195,9 @@ const Map = (): JSX.Element => {
       <NaverMapView
         style={{ width: "100%", height: "100%" }}
         showsMyLocationButton={true}
-        center={{ ...initialCoord, zoom: 15.5 }}
+        center={{ ...initialCoord, zoom: 15 }}
       >
-        {isSearching &&
-          searchResultList.length !== 0 &&
-          searchResultList.map((shop) => {
-            const coord = {
-              latitude: shop.latitude,
-              longitude: shop.longitude,
-            };
-
-            return (
-              <Marker
-                coordinate={coord}
-                width={30}
-                height={40}
-                caption={{ text: shop.store_name }}
-              />
-            );
-          })}
+        {handlePin && <ShopPins />}
       </NaverMapView>
     </SafeAreaView>
   );
