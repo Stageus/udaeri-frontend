@@ -33,9 +33,11 @@ const LoadingPage = () => {
     }
   }, []);
 
-  fetchUserInfo();
-  fetchLargeCategory();
-  fetchJjimList();
+  useEffect(() => {
+    fetchUserInfo();
+    fetchLargeCategory();
+    fetchJjimList();
+  }, []);
 
   return (
     <View>
