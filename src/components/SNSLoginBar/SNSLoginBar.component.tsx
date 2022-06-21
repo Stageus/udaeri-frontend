@@ -69,7 +69,7 @@ const SNSLoginBar = ({ id, moveScreen }: Props) => {
             dispatch(setUserNickname(res.data.nickname)),
               dispatch(checkSponsor(res.data.sponsor));
           })
-          .catch((err) => console.log("회웑 어보 못 받아옴,", err));
+          .catch((err) => console.log("회원 정보 못 받아옴,", err));
       })
       .catch((err) => {
         console.log("server로 access code post 실패");

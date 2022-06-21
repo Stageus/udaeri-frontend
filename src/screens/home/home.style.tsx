@@ -19,12 +19,10 @@ export const Header = {
   `,
   LogoText: styled.Text`
     font-size: 20px;
-    // font-family: ${theme.font.Bold};
     color: ${theme.colors.main};
   `,
   UnivText: styled.Text`
     font-size: 20px;
-    //font-family: ${theme.font.Bold};
     color: ${theme.colors.fontColor1};
   `,
 };

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback, useEffect } from "react";
 import axios from "axios";
 import { createStackNavigator } from "@react-navigation/stack";
 import { NavigationContainer } from "@react-navigation/native";
@@ -9,9 +9,12 @@ import MiddleCat from "../screens/MiddleCat/MiddleCat.component";
 import LoginPage from "../screens/LoginPage/LoginPage.component";
 import StoreList from "../screens/StoreList/StoreList.component";
 import StorePage from "../screens/StorePage/StorePage.component";
+import LoadingPage from "../screens/LoadingPage/LoadingPage.component";
 import { TOKEN_KEY } from "../utils/aboutToken";
 import { handleLogin } from "../store/slice/userSlice";
 import AsyncStorage from "@react-native-async-storage/async-storage";
+import { setUserNickname, checkSponsor } from "../store/slice/userSlice";
+import { getLargeCategory } from "../store/slice/categorySlice";
 
 export type RootStackParamList = {
   LoginPage: undefined;
@@ -20,6 +23,7 @@ export type RootStackParamList = {
   MiddleCat: undefined;
   StoreList: undefined;
   StorePage: undefined;
+  LoadingPage: undefined;
 };
 
 const RootStack = createStackNavigator<RootStackParamList>();
@@ -30,23 +34,34 @@ const RootNavigator = (): JSX.Element => {
   const url = "https://udaeri.com";
   axios.defaults.baseURL = url;
 
-  //   dispatch(checkToken(false))
+  const [isLoading, setIsLoading] = useState(true);
+
   const isLoggedIn = useAppSelector((state) => state.userReducer.isLoggedIn);
-  console.log(isLoggedIn);
 
   const checkToken = async () => {
     const token = await AsyncStorage.getItem(TOKEN_KEY);
     if (!token) dispatch(handleLogin(false));
-    else dispatch(handleLogin(true));
+    else {
+      axios.defaults.headers.common["Authorization"] = token;
+      dispatch(handleLogin(true));
+    }
   };
 
-  checkToken();
+  useEffect(() => {
+    checkToken();
+
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000);
+  }, []);
 
   return (
     <NavigationContainer>
       <RootStack.Navigator screenOptions={{ headerShown: false }}>
         {!isLoggedIn ? (
           <RootStack.Screen name="LoginPage" component={LoginPage} />
+        ) : isLoading ? (
+          <RootStack.Screen name="LoadingPage" component={LoadingPage} />
         ) : (
           <>
             <RootStack.Screen
