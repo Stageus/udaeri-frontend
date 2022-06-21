@@ -8,9 +8,9 @@ import {
 } from "./SearchResultEle.style";
 
 const SearchResultEle = (props): JSX.Element => {
-  const { store_name, inha_location, main_menu } = props;
+  const { store_name, inha_location, main_menu, onPress } = props;
   return (
-    <SearchResultContainer>
+    <SearchResultContainer onPress={onPress}>
       <StoreNameText>{store_name}</StoreNameText>
       <StoreInfoContainer>
         <StoreInfoText>위치 {inha_location},</StoreInfoText>

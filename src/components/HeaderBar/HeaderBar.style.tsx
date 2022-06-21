@@ -12,7 +12,8 @@ export const HeaderBarContainer = styled.View<Props>`
   height: ${height * 0.07}px;
   align-items: center;
   flex-direction: row;
-  padding: 10px 20px;
+  //padding: 10px 20px;
+  padding: 0 20px 10px 20px;
   border-bottom-width: 1px;
   border-color: ${theme.colors.lineColor2};
 

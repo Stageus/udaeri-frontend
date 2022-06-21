@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import { SafeAreaView, Text, TextInput, View } from "react-native";
-import { ScrollView, TouchableOpacity } from "react-native-gesture-handler";
+import { View, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { useAppDispatch } from "../../hooks/index.hooks";
 import { SvgXml } from "react-native-svg";
 import axios from "axios";
 import theme from "../../style/theme";
+
 import {
   SearchInputTextContainer,
   SearchInputText,
@@ -15,9 +17,7 @@ import {
 import { SearchIcon, XIcon, WarningIcon } from "../../assets/icon/icons";
 import SafeAreaViewComp from "../../components/safeAreaViewComp/safeAreaViewComp";
 import SearchResultEle from "../../components/SearchResultEle/SearchResultEle.component";
-
-// import {useAppDispatch, useAppSelector} from '../../../store/hooks';
-// import {ageCounter, nameChange} from '../../../store/slice/userSlice';
+import { setCurStore } from "../../store/slice/curStateSlice";
 
 interface SearchResultType {
   favorited_count: number;
@@ -29,33 +29,14 @@ interface SearchResultType {
 }
 
 const Search = (): JSX.Element => {
+  const dispatch = useAppDispatch();
+  const navigation = useNavigation();
+
   const [searchWord, setSearchWord] = useState("");
   const [searchResultList, setSearchResultList] = useState<SearchResultType[]>(
     []
   );
   const [isSearching, setIsSearching] = useState<boolean>(false);
-
-  //const SEARCH_WORDS_LIST_KEY = "@searchWords";
-
-  //  asyncstorage에 있는 최근검색어 가져오기
-  // const getRecentSearchList = async () => {
-  //   const searchedList = await AsyncStorage.getItem(SEARCH_WORDS_LIST_KEY);
-  //   if (searchedList && searchedList.length !== 0) {
-  //     setRecentSearchList(JSON.parse(searchedList));
-  //   }
-  // };
-
-  //  asyncstorage에 최근검색어 저장하기
-  // const saveRecentSearchList = async (recentSearchList: string[]) => {
-  //   await AsyncStorage.setItem(
-  //     SEARCH_WORDS_LIST_KEY,
-  //     JSON.stringify(recentSearchList)
-  //   );
-  // };
-
-  // const addNewSearchWord = (word: string) => {
-  //   setRecentSearchList([...recentSearchList, word]);
-  // };
 
   // input에 글자 입력하면 나타나는 x 버튼 클릭 시 input 초기화
   const handleResetInput = () => {
@@ -69,7 +50,6 @@ const Search = (): JSX.Element => {
       setIsSearching(true);
       const res = await axios.post("search/stores/1", { text: word });
       setSearchResultList(res.data);
-      console.log("결과", res.data);
     } catch (err) {
       console.log("검색결과 못 가져옴", err);
     }
@@ -127,11 +107,16 @@ const Search = (): JSX.Element => {
             </EmptySearchResulContainer>
           ) : (
             <SearchResultScrollView>
-              {searchResultList.map((item) => (
+              {searchResultList.map((item, index) => (
                 <SearchResultEle
+                  key={index}
                   store_name={item.store_name}
                   inha_location={item.inha_location}
                   main_menu={item.main_menu}
+                  onPress={() => {
+                    dispatch(setCurStore(item.store_name));
+                    navigation.navigate("StorePage");
+                  }}
                 />
               ))}
             </SearchResultScrollView>

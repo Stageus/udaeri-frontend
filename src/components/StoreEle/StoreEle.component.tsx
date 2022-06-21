@@ -16,8 +16,8 @@ import { setCurStore } from "../../store/slice/curStateSlice";
 
 interface Prop {
   storeName: string;
-  content: string;
-  location: string;
+  content?: string;
+  location?: string;
 }
 
 const StoreEle = ({

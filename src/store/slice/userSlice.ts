@@ -1,11 +1,16 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { List } from "reselect/es/types";
 
+interface JjimStoreType {
+  store_name: string;
+  l_category: string;
+}
+
 export interface UserState {
   isLoggedIn: boolean;
   userNickname: string;
   sponsor: boolean;
-  jjimStore: string[];
+  jjimStore: JjimStoreType[];
 }
 
 const initialState: UserState = {
@@ -31,10 +36,29 @@ export const userSlice = createSlice({
     setJJimstore: (state, action) => {
       state.jjimStore = action.payload;
     },
+    addJjimStore: (state, action) => {
+      const newJjimStore = {
+        store_name: action.payload.store_name,
+        l_category: action.payload.l_category,
+      };
+      state.jjimStore = [...state.jjimStore, newJjimStore];
+    },
+    deleteJjimStore: (state, action) => {
+      const idx = state.jjimStore.findIndex(function (item) {
+        return item.store_name === action.payload;
+      });
+      state.jjimStore.splice(idx, 1);
+    },
   },
 });
 
-export const { handleLogin, setUserNickname, checkSponsor, setJJimstore } =
-  userSlice.actions;
+export const {
+  handleLogin,
+  setUserNickname,
+  checkSponsor,
+  setJJimstore,
+  addJjimStore,
+  deleteJjimStore,
+} = userSlice.actions;
 
 export default userSlice.reducer;
