@@ -7,16 +7,15 @@ export const saveToken = async (token: string) => {
   await AsyncStorage.setItem(TOKEN_KEY, token);
 };
 
-export const getToken = async () => {
-  let token;
-
-  useEffect(() => {
-    AsyncStorage.getItem(TOKEN_KEY, (err, result) => {
-      token = result;
-    });
+export const getToken = async (callbackFn) => {
+  // useEffect(() => {
+  //   AsyncStorage.getItem(TOKEN_KEY, (err, result) => {
+  //     token = result;
+  //   });
+  // });
+  await AsyncStorage.getItem(TOKEN_KEY, (err, result) => {
+    callbackFn(result);
   });
-
-  return token;
 };
 
 export const expireToken = async () => {

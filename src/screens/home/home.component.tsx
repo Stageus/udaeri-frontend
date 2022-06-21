@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from "react";
-
+import React, { useState, useEffect, useCallback } from "react";
+import axios from "axios";
 import { Container, Header, MiddleBlock } from "./Home.style";
 import { LongBtn } from "../../components/longBtn/longBtn.component";
 import { HomeJjimEle } from "../../components/home-jjimEle/home-jjimEle.component";
@@ -57,12 +57,11 @@ const categoryList = [
 const Home = (): JSX.Element => {
   const dispatch = useAppDispatch();
 
-  useEffect(() => {
-    const fetchLargeCategory = async () => {
-      await dispatch(getLargeCategory());
-    };
-    fetchLargeCategory();
-  }, []);
+  const category = useAppSelector(
+    (state) => state.categoryReducer.largeCatList
+  );
+
+  const jjimList = useAppSelector((state) => state.userReducer.jjimStore);
 
   return (
     <SafeAreaViewComp>
