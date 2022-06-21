@@ -1,9 +1,9 @@
-import {createSlice, PayloadAction} from '@reduxjs/toolkit';
-import { List } from 'reselect/es/types';
+import { createSlice, PayloadAction } from "@reduxjs/toolkit";
+import { List } from "reselect/es/types";
 
 export interface UserState {
-  curStore: string,
-  jjimState: boolean,
+  curStore: string;
+  jjimState: boolean;
 }
 
 const initialState: UserState = {
@@ -12,15 +12,15 @@ const initialState: UserState = {
 };
 
 export const curStateSlice = createSlice({
-  name: 'curState',
+  name: "curState",
   initialState,
   reducers: {
-    setCurStore : (state, action) => {
-      state.curStore = action.payload
+    setCurStore: (state, action) => {
+      state.curStore = action.payload;
     },
-    setJJimState : (state, action) => {
-      state.jjimState = action.payload
-    }
+    setJJimState: (state, action) => {
+      state.jjimState = action.payload;
+    },
   },
 });
 

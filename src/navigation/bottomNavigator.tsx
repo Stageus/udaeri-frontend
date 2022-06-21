@@ -4,7 +4,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import theme from "../style/theme";
 import Home from "../screens/Home/home.component";
 import Search from "../screens/Search/search.component";
-import Jjim from "../screens/Jjim/jjim.component";
+import Jjim from "../screens/Jjim/Jjim.component";
 import MyPage from "../screens/MyPage/my-page.component";
 
 import { SvgXml } from "react-native-svg";

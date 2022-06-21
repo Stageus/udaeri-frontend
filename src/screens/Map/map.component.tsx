@@ -20,6 +20,7 @@ import {
 import { XIcon, BackIcon } from "../../assets/icon/icons";
 import theme from "../../style/theme";
 import ToastMessage from "../../components/ToastMessage/ToastMessage.component";
+import { setCurStore } from "../../store/slice/curStateSlice";
 
 interface SearchResultType {
   favorited_count: number;
@@ -37,7 +38,9 @@ interface LargeCategoryShopsType {
 }
 
 const Map = (): JSX.Element => {
+  const dispatch = useAppDispatch();
   const navigation = useNavigation();
+
   const largeCategory = useAppSelector(
     (state) => state.categoryReducer.largeCatList
   );
@@ -56,6 +59,11 @@ const Map = (): JSX.Element => {
   const [toastState, setToastState] = useState<boolean>(false);
 
   const initialCoord = { latitude: 37.452, longitude: 126.6575 };
+
+  useEffect(() => {
+    setSearchWord("");
+    setClickedLargeCategory("");
+  }, []);
 
   // 검색창 focus
   const handleFocus = () => {
@@ -116,7 +124,7 @@ const Map = (): JSX.Element => {
       <>
         {isSearching
           ? searchResultList.length !== 0 &&
-            searchResultList.map((shop) => {
+            searchResultList.map((shop, index) => {
               const coord = {
                 latitude: shop.latitude,
                 longitude: shop.longitude,
@@ -124,15 +132,21 @@ const Map = (): JSX.Element => {
 
               return (
                 <Marker
+                  key={index}
                   coordinate={coord}
                   width={30}
                   height={40}
                   caption={{ text: shop.store_name }}
+                  onClick={() => {
+                    dispatch(setCurStore(shop.store_name));
+                    navigation.navigate("StorePage");
+                    setSearchWord("");
+                  }}
                 />
               );
             })
           : isCategoryClicked &&
-            clickedLargeCategoryShops.map((shop) => {
+            clickedLargeCategoryShops.map((shop, index) => {
               const coord = {
                 latitude: shop.latitude,
                 longitude: shop.longitude,
@@ -140,10 +154,16 @@ const Map = (): JSX.Element => {
 
               return (
                 <Marker
+                  key={index}
                   coordinate={coord}
                   width={30}
                   height={40}
                   caption={{ text: shop.store_name }}
+                  onClick={() => {
+                    dispatch(setCurStore(shop.store_name));
+                    navigation.navigate("StorePage");
+                    setClickedLargeCategory("");
+                  }}
                 />
               );
             })}
